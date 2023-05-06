@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "aboutUs": "Sobre Nós",
+    "vision": "Visão",
+    "brands": "Marcas",
+    "media": "Media",
+    "contacts": "Contactos"
+  },
+  "ageGate": {
+    "title": "Bem vindo!",
+    "text": "Confirma ter a idade legal para consumir bebidas alcoólicas?",
+    "buttonYes": "Sim",
+    "buttonNo": "Não",
+    "denyMessage": "Desculpe, mas não pode aceder a este site."
+  },
+  "footer": {
+    "copyRights": "Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsAndConditions": "Termos e Condições"
+  }
+}

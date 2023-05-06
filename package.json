@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.0",
+    "@sanity/image-url": "^1.0.2",
+    "hamburger-react": "^2.5.0",
     "next": "13.2.4",
+    "next-sanity": "^4.1.7",
+    "next-translate": "^2.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "next-translate-plugin": "^2.0.2"
   }
 }

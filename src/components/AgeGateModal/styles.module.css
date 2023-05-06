@@ -1,0 +1,78 @@
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.wrapper {
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 750px;
+  background: var(--wine-color);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--white);
+}
+
+.text {
+  text-align: center;
+}
+
+.btnsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.btns {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 0.5rem 1rem;
+  width: 50px;
+}
+
+.btns:hover {
+  background: var(--white);
+  color: var(--wine-color);
+}
+
+/* .btns:focus {
+  border: 1px solid #000;
+} */
+
+.languageContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.langLink {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}

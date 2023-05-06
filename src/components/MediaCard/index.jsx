@@ -1,0 +1,34 @@
+import styles from './MediaCard.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import { client } from '../../lib/sanity.client';
+import imageUrlBuilder from '@sanity/image-url';
+/* import { PortableText } from "@portabletext/react"; */
+
+export const MediaCard = ({ image, title, summary, slug }) => {
+  const builder = imageUrlBuilder(client);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
+  return (
+    <div className={styles.card}>
+      <div className={styles.imageWrapper}>
+        <Image
+          src={urlFor(image).url()}
+          alt={title}
+          fill
+          className={styles.image}
+        />
+      </div>
+
+      <div className={styles.cardBody}>
+        <h3>{title}</h3>
+        <p>{summary}</p>
+      </div>
+      <Link href={`${slug.current}`} className={styles.link}>
+        Continuar a ler...
+      </Link>
+    </div>
+  );
+};

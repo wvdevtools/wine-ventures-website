@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "aboutUs": "About Us",
+    "vision": "Vision",
+    "brands": "Brands",
+    "media": "Media",
+    "contacts": "Contacts"
+  },
+  "ageGate": {
+    "title": "Welcome!",
+    "text": "Do you confirm that you are of legal age to consume alcoholic beverages?",
+    "buttonYes": "Yes",
+    "buttonNo": "No",
+    "denyMessage": "Sorry, but you cannot access this site."
+  },
+  "footer": {
+    "copyRights": "All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms and Conditions"
+  }
+}

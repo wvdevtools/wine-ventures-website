@@ -1,0 +1,70 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+
+.list a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.list a:hover {
+  color: var(--wine-color);
+}
+
+.hambIcon {
+  display: none;
+}
+
+.languageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.languageContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.languageContainer a:hover {
+  color: var(--wine-color);
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .languageContainer {
+    display: none;
+  }
+  .hambIcon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

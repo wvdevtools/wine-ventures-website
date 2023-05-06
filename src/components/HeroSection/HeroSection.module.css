@@ -1,0 +1,21 @@
+.heroSection {
+  background-image: url('/images/new-hero-img.png');
+  min-height: calc(100vh - 70px);
+  padding: 1.5rem;
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  width: 500px;
+  height: 222px;
+}
+
