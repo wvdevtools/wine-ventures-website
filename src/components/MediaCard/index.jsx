@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { client } from '../../lib/sanity.client';
 import imageUrlBuilder from '@sanity/image-url';
-/* import { PortableText } from "@portabletext/react"; */
 
 export const MediaCard = ({ image, title, summary, slug }) => {
   const builder = imageUrlBuilder(client);
@@ -26,7 +25,7 @@ export const MediaCard = ({ image, title, summary, slug }) => {
         <h3>{title}</h3>
         <p>{summary}</p>
       </div>
-      <Link href={`${slug.current}`} className={styles.link}>
+      <Link href={`media/${slug.current}`} className={styles.link}>
         Continuar a ler...
       </Link>
     </div>

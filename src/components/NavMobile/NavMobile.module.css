@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 80px);
   background-color: var(--wine-color);
   transition: transform 1s ease-in-out;
   overflow: hidden;
   position: fixed;
-  top: 70px;
+  top: 80px;
   left: 0;
   z-index: 100;
   padding: 5rem 0;

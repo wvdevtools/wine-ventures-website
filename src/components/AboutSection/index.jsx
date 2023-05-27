@@ -17,7 +17,7 @@ const AboutSection = ({ t }) => {
           aliquam interdum erat, mattis sollicitudin lacus euismod in. Quisque
           malesuada convallis ante, id placerat est molestie nec.
         </p>
-        <Link href="/about" className={styles.button}>
+        <Link href="/sobre-nos" className={styles.button}>
           {t('aboutUs.knowMore')}
         </Link>
       </div>

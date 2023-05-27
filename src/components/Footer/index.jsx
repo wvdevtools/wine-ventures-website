@@ -2,7 +2,7 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
 
-export const Footer = ({t}) => {
+export const Footer = ({ t }) => {
   const currentYear = new Date().getFullYear();
 
   /* const [width, setWidth] = useState(0);
@@ -52,14 +52,17 @@ export const Footer = ({t}) => {
             />
           </a>
         </div>
-        <a href="https://www.wineinmoderation.eu/" target="_blank">
-          <Image
-            src="/images/wine-moderation.svg"
-            alt="Wine Moderation"
-            width={176}
-            height={50}
-          />
-        </a>
+        <div className={styles.wineModerationContainer}>
+          <a href="https://www.wineinmoderation.eu/" target="_blank">
+            <Image
+              src="/images/wine-moderation.svg"
+              alt="Wine Moderation"
+              width={176}
+              height={50}
+            />
+          </a>
+          <p>Seja Responsável. <br/> Beba com moderação. </p>
+        </div>
       </div>
       <div className={styles.columnTwoAndThree}>
         <div className={styles.secondColumn}>
@@ -73,6 +76,7 @@ export const Footer = ({t}) => {
             CopyRight © {currentYear} Wine Ventures By The Glass.
             {<br />} {t('footer.copyRights')}
           </p>
+          
         </div>
         <div className={styles.thirdColumn}>
           <Image
@@ -84,16 +88,12 @@ export const Footer = ({t}) => {
 
           <div className={styles.privacyLinks}>
             <a href="" target="blank">
-            {t('footer.termsAndConditions')}
+              {t('footer.termsAndConditions')}
             </a>
             <a href="" target="blank">
               {' '}
               {t('footer.privacyPolicy')}
             </a>
-            {/* <p className={styles.copyText}>
-            CopyRight © {currentYear} Wine Ventures By The Glass.
-            {<br />} {t('footer.copyRights')}
-          </p> */}
           </div>
         </div>
       </div>

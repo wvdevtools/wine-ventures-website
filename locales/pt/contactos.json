@@ -1,0 +1,16 @@
+{
+  "title": "Contactos",
+  "subtitle": "Entre em contato conosco, vamos falar sobre vinhos!",
+  "contacts": {
+    "address": "Morada",
+    "email": "E-mail",
+    "phone": "Telefone"
+  },
+  "form": {
+    "title": "Envie-nos uma mensagem:",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "send": "Enviar"
+  }
+}

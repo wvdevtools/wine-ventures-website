@@ -36,20 +36,6 @@ const BrandsSection = ({ t }) => {
               className={styles.img}
             />
           </Link>
-          {/* <BrandsCard
-            brand={{
-              name: "Crime Of The Century",
-              image: "/images/cotc_brand.png",
-              href: "/",
-            }}
-          /> */}
-          {/* <BrandsCard
-            brand={{
-              name: "Dansa",
-              image: "/images/dansa_brand.png",
-              href: "/",
-            }}
-          /> */}
         </div>
       </div>
     </section>

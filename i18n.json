@@ -3,6 +3,7 @@
   "defaultLocale": "pt",
   "pages": {
     "*": ["common"],
-    "/": ["home"]
+    "/": ["home"],
+    "/contactos": ["contactos"]
   }
 }

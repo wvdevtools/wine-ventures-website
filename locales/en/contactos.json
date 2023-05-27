@@ -1,0 +1,16 @@
+{
+  "title": "Contacts",
+  "subtitle": "Get in touch, let's talk about wines!",
+  "contacts": {
+    "address": "Address",
+    "email": "E-mail",
+    "phone": "Phone"
+  },
+  "form": {
+    "title": "Send us a message:",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Send"
+  }
+}

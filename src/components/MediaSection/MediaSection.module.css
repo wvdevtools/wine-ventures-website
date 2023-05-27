@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 80px;
 }
 
 .sectionContainer {
@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 .buttonContainer {
@@ -51,7 +52,7 @@
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: var(--white);
   text-decoration: none;
   cursor: pointer;

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--wine-color);
-  scroll-margin-top: 70px;
+  scroll-margin-top: 80px;
 }
 
 .sectionContainer {

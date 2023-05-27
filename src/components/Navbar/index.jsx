@@ -2,6 +2,7 @@ import styles from './Navbar.module.css';
 import Hamburger from 'hamburger-react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Navbar = ({ toggleMobileNav, t }) => {
   const router = useRouter();
@@ -9,16 +10,24 @@ export const Navbar = ({ toggleMobileNav, t }) => {
   return (
     <div className={styles.navbar}>
       <div className={styles.navContainer}>
-        <h1 style={{ color: '#611A41' }}>Brand</h1>
+        <Link href="/" className={styles.brandLink}>
+            <Image
+              src="/images/small-wv-logo.svg"
+              alt="logo"
+              width={76}
+              height={54}
+            />
+        </Link>
+
         <div className={styles.hambIcon} onClick={toggleMobileNav}>
           <Hamburger color="#611A41" size={20} />
         </div>
         <nav className={styles.nav}>
           <ul className={styles.list}>
-            <Link href="#marcas">{t('navbar.brands')}</Link>
-            <Link href="#sobre-nos">{t('navbar.aboutUs')}</Link>
-            <Link href="#media">{t('navbar.media')}</Link>
-            <Link href="#contactos">{t('navbar.contacts')}</Link>
+            <Link href="/#marcas">{t('navbar.brands')}</Link>
+            <Link href="/#sobre-nos">{t('navbar.aboutUs')}</Link>
+            <Link href="/#media">{t('navbar.media')}</Link>
+            <Link href="/contactos">{t('navbar.contacts')}</Link>
           </ul>
         </nav>
 

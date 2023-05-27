@@ -1,0 +1,22 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.sectionContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 35px;
+  color: #000;
+}

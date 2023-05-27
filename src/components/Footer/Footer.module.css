@@ -73,6 +73,17 @@
   height: 140px;
 }
 
+.wineModerationContainer{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wineModerationContainer p{
+  color: var(--white);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .sectionContainer {
     flex-direction: column;
@@ -108,4 +119,18 @@
     align-items: center;
     gap: 0.25rem;
   }
+
+  .wineModerationContainer{
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .wineModerationContainer p{
+    margin-top: 0;
+  }
+
+  .wineModerationContainer p br{
+    display: none;
+  }
+
 }

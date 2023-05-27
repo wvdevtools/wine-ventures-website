@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
     <>
       <header className={roboto.className}>
         <Navbar toggleMobileNav={toggleMobileNav} t={t}/>
-        <NavMobile mobileNavisOpen={mobileNavisOpen} t={t}/>
+        <NavMobile mobileNavisOpen={mobileNavisOpen} t={t} toggleMobileNav={toggleMobileNav}/>
       </header>
       <main className={didact.className}>
         <Component {...pageProps} inactive={true} />

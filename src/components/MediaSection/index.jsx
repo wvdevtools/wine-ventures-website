@@ -1,10 +1,16 @@
-import React from 'react';
+import { useState } from 'react';
 import styles from './MediaSection.module.css';
 import { MediaCard } from '../MediaCard';
 import Link from 'next/link';
 
 const MediaSection = ({ articlesData, t }) => {
-  console.log('articlesData mediaSection: ', articlesData);
+  const [articles, setArticles] = useState(articlesData);
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowAllClick = () => {
+    setShowAll(true);
+    setArticles(articlesData);
+  };
 
   return (
     <section className={styles.section} id="media">
@@ -12,9 +18,8 @@ const MediaSection = ({ articlesData, t }) => {
         <div className={styles.titleWrapper}>
           <h2 className={styles.title}>{t('media.title')}</h2>
         </div>
-
         <div className={styles.cards}>
-          {articlesData.map((article) => (
+          {articles.slice(0, showAll ? articles.length : 3).map((article) => (
             <MediaCard
               key={article._id}
               image={article.mainImage}
@@ -25,9 +30,11 @@ const MediaSection = ({ articlesData, t }) => {
           ))}
         </div>
         <div className={styles.buttonContainer}>
-          <Link href="" className={styles.button}>
+          {!showAll && (
+            <button className={styles.button} onClick={handleShowAllClick}>
             {t('media.seeAll')}
-          </Link>
+          </button>
+          )}
         </div>
       </div>
     </section>

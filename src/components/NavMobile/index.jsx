@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './NavMobile.module.css';
 import { useRouter } from 'next/router';
 
-export const NavMobile = ({ mobileNavisOpen, t }) => {
+export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav }) => {
   const router = useRouter();
   console.log('mobileNavisOpen', mobileNavisOpen);
   return (
@@ -10,10 +10,18 @@ export const NavMobile = ({ mobileNavisOpen, t }) => {
       <div className={styles.mobileMenu}>
         <nav className={styles.nav}>
           <ul className={styles.list}>
-            <Link href="#marcas">{t('navbar.brands')}</Link>
-            <Link href="#sobre-nos">{t('navbar.aboutUs')}</Link>
-            <Link href="#media">{t('navbar.media')}</Link>
-            <Link href="#contactos">{t('navbar.contacts')}</Link>
+            <Link href="/#marcas" onClick={toggleMobileNav}>
+              {t('navbar.brands')}
+            </Link>
+            <Link href="/#sobre-nos" onClick={toggleMobileNav}>
+              {t('navbar.aboutUs')}
+            </Link>
+            <Link href="/#media" onClick={toggleMobileNav}>
+              {t('navbar.media')}
+            </Link>
+            <Link href="/contactos" onClick={toggleMobileNav}>
+              {t('navbar.contacts')}
+            </Link>
           </ul>
         </nav>
 

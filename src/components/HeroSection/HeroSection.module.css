@@ -1,6 +1,8 @@
+/* prefix animation with global :global*/
+
 .heroSection {
   background-image: url('/images/new-hero-img.png');
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 80px);
   padding: 1.5rem;
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed; */
@@ -16,6 +18,76 @@
 .imageContainer {
   position: relative;
   width: 500px;
-  height: 222px;
+  height: 202px;
+}
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
+.titleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5px;
+}
+
+.title {
+  font-size: 51px;
+  font-weight: 100;
+  color: var(--wine-color);
+}
+
+.subTitle {
+  color: var(--light-wine-color);
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 100;
+}
+@keyframes jumpInfinite {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scrollDownImageContainer {
+  position: absolute;
+  bottom: 45px;
+  cursor: pointer;
+  animation: jumpInfinite 2s ease-in-out infinite;
+}
+
+.scrollDownImage {
+  width: 75px;
+  height: 25px;
+}
+
+/* media 
+  h1 30px
+  imagem: 100 por 60
+  h2 12px 1px spacing
+*/
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 30px;
+  }
+  .subTitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  /* .imageContainer {
+    width: 100px;
+    height: 60px;
+  } */
+}
