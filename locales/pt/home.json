@@ -1,7 +1,7 @@
 {
   "brands": {
     "title": "Marcas",
-    "subtitle": "A nossa carteira de vinhos demonstra onosso sucesso e compromisso com nossa visão de construir marcas de vinho fortes que entregam valor inbeatable para nossos clientes."
+    "subtitle": "A carteira de vinhos da Wine Ventures demonstra o sucesso e o compromisso com a nossa visão de construir marcas de vinho fortes que entregam um valor imbatível para os nossos clientes."
   },
   "aboutUs": {
     "title": "Sobre Nós",
@@ -9,6 +9,7 @@
   },
   "media": {
     "title": "Media",
+    "readMore": "Leia Mais",
     "seeAll": "Ver Tudo"
   }
 }

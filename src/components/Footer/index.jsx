@@ -1,6 +1,7 @@
 /* import { useEffect, useState } from 'react'; */
 import styles from './Footer.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Footer = ({ t }) => {
   const currentYear = new Date().getFullYear();
@@ -61,7 +62,9 @@ export const Footer = ({ t }) => {
               height={50}
             />
           </a>
-          <p>Seja Responsável. <br/> Beba com moderação. </p>
+          <p>
+            Seja Responsável. <br /> Beba com moderação.{' '}
+          </p>
         </div>
       </div>
       <div className={styles.columnTwoAndThree}>
@@ -76,7 +79,6 @@ export const Footer = ({ t }) => {
             CopyRight © {currentYear} Wine Ventures By The Glass.
             {<br />} {t('footer.copyRights')}
           </p>
-          
         </div>
         <div className={styles.thirdColumn}>
           <Image
@@ -87,13 +89,13 @@ export const Footer = ({ t }) => {
           />
 
           <div className={styles.privacyLinks}>
-            <a href="" target="blank">
+            <Link href="/termos-condicoes" target="blank">
               {t('footer.termsAndConditions')}
-            </a>
-            <a href="" target="blank">
+            </Link>
+            <Link href="/politica-privacidade" target="blank">
               {' '}
               {t('footer.privacyPolicy')}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

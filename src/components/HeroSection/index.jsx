@@ -2,17 +2,21 @@ import Link from 'next/link';
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
 import { baskervville, roboto, inter, didact } from '@/utils/fonts';
+import { Fade } from 'react-awesome-reveal';
 
 export const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
-      <div className={styles.imageContainer}>
-        <Image
-          src="/images/wine-ventures-logo-color.svg"
-          alt="main logo"
-          fill
-        />
-      </div>
+
+        <div className={styles.imageContainer}>
+          <Image
+            src="/images/wine-ventures-logo-color.svg"
+            alt="main logo"
+            fill
+          />
+        </div>
+       
+
       {/* <div className={styles.brandContainer}>
       <div className={styles.imageContainer}>
         <Image
@@ -31,8 +35,6 @@ export const HeroSection = () => {
         </div>
       </div> */}
 
-      
-      
       <Link className={styles.scrollDownImageContainer} href="#marcas">
         <img
           src="/images/scroll-down.svg"

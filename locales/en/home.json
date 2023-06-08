@@ -1,7 +1,7 @@
 {
   "brands": {
     "title": "Brands",
-    "subtitle": "Our portfolio of wines demonstrates our success and commitment to our vision of building strong wine brands that deliver inbeatable value to our customers."
+    "subtitle": "Wine Ventures portfolio of wines demonstrates our success and commitment to our vision of building strong wine brands that deliver inbeatable value to our customers."
   },
   "aboutUs": {
     "title": "About Us",
@@ -9,6 +9,7 @@
   },
   "media": {
     "title": "Media",
+    "readMore": "Read More",
     "seeAll": "See All"
   }
 }

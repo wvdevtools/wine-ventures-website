@@ -1,0 +1,52 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.backLinkContainer {
+  align-self: flex-start;
+  border-bottom: var(--wine-color) 2px solid;
+}
+.backLink {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--wine-color);
+  text-decoration: none;
+}
+
+.titleWrapper {
+  width: fit-content;
+  border-left: 5px solid var(--wine-color);
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 35px;
+  color: #000;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contentContainer ul {
+  padding-left: 2rem;
+}
+
+.contentContainer ol {
+  padding-left: 2rem;
+}

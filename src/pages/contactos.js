@@ -1,17 +1,19 @@
-import { useRef } from 'react';
-import styles from '../styles/Contacts.module.css'
+import { useRef, useState } from 'react';
+import styles from '../styles/Contacts.module.css';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-import useTranslation from "next-translate/useTranslation";
-
+import useTranslation from 'next-translate/useTranslation';
 
 const Contactos = () => {
-  const { t } = useTranslation("contactos");
+  const { t } = useTranslation('contactos');
   const form = useRef();
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         'service_hwrkitg',
@@ -21,13 +23,23 @@ const Contactos = () => {
       )
       .then(
         (result) => {
-          alert(result.text);
+          setSuccessMessage(t('form.success'));
+          setTimeout(() => {
+            setSuccessMessage('');
+          }, 10000);
+          form.current.reset();
+          setLoading(false);
         },
         (error) => {
-          alert(error.text);
+          setErrorMessage(t('form.error'));
+          setTimeout(() => {
+            setErrorMessage('');
+          }, 10000);
+          setLoading(false);
         }
       );
   };
+
   return (
     <section className={styles.section}>
       <div className={styles.sectionContainer}>
@@ -36,9 +48,7 @@ const Contactos = () => {
         </div>
         <div className={styles.contactContainer}>
           <div className={styles.infoContainer}>
-            <p className={styles.subtitle}>
-              {t('subtitle')}
-            </p>
+            <p className={styles.subtitle}>{t('subtitle')}</p>
             <div className={styles.infoWrapper}>
               <div className={styles.info}>
                 <div className={styles.iconAndText}>
@@ -92,9 +102,23 @@ const Contactos = () => {
               </div>
               <div className={styles.formGroups}>
                 <label>{t('form.message')}</label>
-                <textarea name="message" className={styles.input} />
+                <textarea
+                  name="message"
+                  className={`${styles.input} ${styles.textarea}`}
+                />
               </div>
-              <input type="submit" value={t('form.send')} className={styles.sendBtn}/>
+              <input
+                type="submit"
+                value={t('form.send')}
+                disabled={successMessage || errorMessage || loading}
+                className={styles.sendBtn}
+              />
+              {successMessage && (
+                <p className={styles.statusMessage}>{successMessage}</p>
+              )}
+              {errorMessage && (
+                <p className={styles.statusMessage}>{errorMessage}</p>
+              )}
             </form>
           </div>
         </div>

@@ -6,14 +6,20 @@
   gap: 5rem;
   height: calc(100vh - 80px);
   background-color: var(--wine-color);
-  transition: transform 1s ease-in-out;
-  overflow: hidden;
-  position: fixed;
-  top: 80px;
-  left: 0;
   z-index: 100;
   padding: 5rem 0;
+  animation: appear 0.3s ease-in-out;
 }
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .list {
   display: flex;
@@ -27,23 +33,25 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .languageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.languageContainer span {
+/* .languageContainer span {
   color: var(--white);
 }
-
+ */
 .languageContainer a {
   cursor: pointer;
   text-decoration: none;
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  padding: 0.2rem 0.7rem;
 }

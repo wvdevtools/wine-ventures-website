@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav }) => {
   const router = useRouter();
-  console.log('mobileNavisOpen', mobileNavisOpen);
+  
   return (
     mobileNavisOpen && (
       <div className={styles.mobileMenu}>
@@ -29,7 +29,6 @@ export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav }) => {
           <Link href={router.asPath} locale={router.locales[0]}>
             PT
           </Link>
-          <span>|</span>
           <Link href={router.asPath} locale={router.locales[1]}>
             EN
           </Link>

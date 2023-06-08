@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { client } from '../../lib/sanity.client';
 import imageUrlBuilder from '@sanity/image-url';
 
-export const MediaCard = ({ image, title, summary, slug }) => {
+export const MediaCard = ({ image, title, summary, slug, t }) => {
   const builder = imageUrlBuilder(client);
 
   function urlFor(source) {
@@ -26,7 +26,7 @@ export const MediaCard = ({ image, title, summary, slug }) => {
         <p>{summary}</p>
       </div>
       <Link href={`media/${slug.current}`} className={styles.link}>
-        Continuar a ler...
+      {t('media.readMore')}
       </Link>
     </div>
   );

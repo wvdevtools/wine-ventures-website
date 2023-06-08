@@ -1,17 +1,51 @@
 import styles from '../../styles/Article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 //Sanity
 import { client } from '../../lib/sanity.client';
 import groq from 'groq';
-import imageUrlBuilder from "@sanity/image-url";
-import { PortableText } from "@portabletext/react";
+import imageUrlBuilder from '@sanity/image-url';
+import { PortableText } from '@portabletext/react';
 
 const Article = ({ article }) => {
-  console.log('article: ', article);
+  const { t } = useTranslation('common');
+
+  const builder = imageUrlBuilder(client);
+
+  function urlFor(source) {
+    return builder.image(source);
+  }
 
   return (
     <section className={styles.section}>
       <div className={styles.sectionContainer}>
-        <h1 className={styles.title}>{article.title}</h1>
+        <div className={styles.backLinkContainer}>
+          <Link href="/#media" className={styles.backLink}>
+            <img src="/images/back-arrow.svg" alt="back arrow" /> {t('backLink')}
+          </Link>
+        </div>
+        <div className={styles.articleCard}>
+          <div className={styles.imageContainer}>
+            <Image
+              src={urlFor(article.mainImage).url()}
+              alt={article.title}
+              fill
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.articleBodyContainer}>
+            <div className={styles.titleWrapper}>
+              <h1 className={styles.title}>{article.title}</h1>
+            </div>
+            <p className={styles.publishedAt}>
+              {article.publishedAt.split('T')[0]}
+            </p>
+            <article className={styles.articleBody}>
+              <PortableText value={article.body} />
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   );

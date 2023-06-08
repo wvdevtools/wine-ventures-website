@@ -4,6 +4,11 @@
   "pages": {
     "*": ["common"],
     "/": ["home"],
-    "/contactos": ["contactos"]
+    "/contactos": ["contactos"],
+    "/crime-of-the-century": ["cotc"],
+    "/dansa": ["dansa"],
+    "/sobre-nos": ["sobreNos"],
+    "/politica-privacidade": ["politicaPrivacidade"],
+    "/termos-condicoes": ["termosCondicoes"]
   }
 }

@@ -11,6 +11,8 @@
     "name": "Name",
     "email": "E-mail",
     "message": "Message",
-    "send": "Send"
+    "send": "Send",
+    "success": "Message sent successfully! We will contact you as soon as possible.",
+    "error": "Error sending message! Please try again later."
   }
 }
