@@ -89,10 +89,10 @@ export const Footer = ({ t }) => {
           />
 
           <div className={styles.privacyLinks}>
-            <Link href="/termos-condicoes" target="blank">
+            <Link href="/termos-condicoes">
               {t('footer.termsAndConditions')}
             </Link>
-            <Link href="/politica-privacidade" target="blank">
+            <Link href="/politica-privacidade">
               {' '}
               {t('footer.privacyPolicy')}
             </Link>
