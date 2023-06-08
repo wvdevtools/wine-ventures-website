@@ -16,6 +16,7 @@ export const Navbar = ({ toggleMobileNav, t }) => {
               alt="logo"
               width={76}
               height={54}
+              priority
             />
         </Link>
 

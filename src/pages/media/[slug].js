@@ -18,36 +18,41 @@ const Article = ({ article }) => {
   }
 
   return (
-    <section className={styles.section}>
-      <div className={styles.sectionContainer}>
-        <div className={styles.backLinkContainer}>
-          <Link href="/#media" className={styles.backLink}>
-            <img src="/images/back-arrow.svg" alt="back arrow" /> {t('backLink')}
-          </Link>
-        </div>
-        <div className={styles.articleCard}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={urlFor(article.mainImage).url()}
-              alt={article.title}
-              fill
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.articleBodyContainer}>
-            <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>{article.title}</h1>
+    <>
+      {article && (
+        <section className={styles.section}>
+          <div className={styles.sectionContainer}>
+            <div className={styles.backLinkContainer}>
+              <Link href="/#media" className={styles.backLink}>
+                <img src="/images/back-arrow.svg" alt="back arrow" />{' '}
+                {t('backLink')}
+              </Link>
             </div>
-            <p className={styles.publishedAt}>
-              {article.publishedAt.split('T')[0]}
-            </p>
-            <article className={styles.articleBody}>
-              <PortableText value={article.body} />
-            </article>
+            <div className={styles.articleCard}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={urlFor(article.mainImage).url()}
+                  alt={article.title}
+                  fill
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.articleBodyContainer}>
+                <div className={styles.titleWrapper}>
+                  <h1 className={styles.title}>{article.title}</h1>
+                </div>
+                <p className={styles.publishedAt}>
+                  {article.publishedAt.split('T')[0]}
+                </p>
+                <article className={styles.articleBody}>
+                  <PortableText value={article.body} />
+                </article>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      )}
+    </>
   );
 };
 
