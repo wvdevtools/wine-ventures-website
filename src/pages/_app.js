@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '@/styles/globals.css';
 import { AgeGateModal } from '@/components/AgeGateModal';
 import { Navbar } from '@/components/Navbar';
@@ -7,6 +7,7 @@ import { NavMobile } from '@/components/NavMobile';
 import { Footer } from '@/components/Footer';
 import { roboto, didact } from '@/utils/fonts';
 import useTranslation from 'next-translate/useTranslation';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   const [mobileNavisOpen, setMobileNavisOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function App({ Component, pageProps }) {
       <div className={didact.className}>
         <AgeGateModal />
       </div>
+      <Analytics />
     </>
   );
 }
