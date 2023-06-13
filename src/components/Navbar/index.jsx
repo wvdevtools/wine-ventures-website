@@ -4,24 +4,29 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const Navbar = ({ toggleMobileNav, t }) => {
+export const Navbar = ({ toggleMobileNav, t, iconIsOpen, setIconOpen }) => {
   const router = useRouter();
 
   return (
     <div className={styles.navbar}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.brandLink}>
-            <Image
-              src="/images/small-wv-logo.svg"
-              alt="logo"
-              width={76}
-              height={54}
-              priority
-            />
+          <Image
+            src="/images/small-wv-logo.svg"
+            alt="logo"
+            width={76}
+            height={54}
+            priority
+          />
         </Link>
 
         <div className={styles.hambIcon} onClick={toggleMobileNav}>
-          <Hamburger color="#611A41" size={20} />
+          <Hamburger
+            color="#611A41"
+            size={20}
+            toggled={iconIsOpen}
+            toggle={setIconOpen}
+          />
         </div>
         <nav className={styles.nav}>
           <ul className={styles.list}>

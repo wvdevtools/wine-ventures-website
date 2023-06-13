@@ -63,7 +63,12 @@ export const AgeGateModal = () => {
               </div>
               {ageError ? <p className={styles.error}>{denyMessage}</p> : null}
 
-              <Image src="/images/white_logo.svg" width={175} height={78} />
+              <Image
+                src="/images/white_logo.svg"
+                alt="Wine Ventures Logo"
+                width={175}
+                height={78}
+              />
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const HeroSection = () => {
         <div className={styles.imageContainer}>
           <Image
             src="/images/wine-ventures-logo-color.svg"
-            alt="main logo"
+            alt="Wine Ventures Logo"
             fill
           />
         </div>

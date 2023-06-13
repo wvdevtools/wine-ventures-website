@@ -10,6 +10,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 export default function App({ Component, pageProps }) {
   const [mobileNavisOpen, setMobileNavisOpen] = useState(false);
+  const [iconIsOpen, setIconOpen] = useState(false);
   const { t } = useTranslation('common');
 
   const toggleMobileNav = () => {
@@ -28,11 +29,18 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <header className={roboto.className}>
-        <Navbar toggleMobileNav={toggleMobileNav} t={t} />
+        <Navbar
+          toggleMobileNav={toggleMobileNav}
+          t={t}
+          iconIsOpen={iconIsOpen}
+          setIconOpen={setIconOpen}
+        />
         <NavMobile
           mobileNavisOpen={mobileNavisOpen}
           t={t}
           toggleMobileNav={toggleMobileNav}
+          iconIsOpen={iconIsOpen}
+          setIconOpen={setIconOpen}
         />
       </header>
       <main className={didact.className}>
