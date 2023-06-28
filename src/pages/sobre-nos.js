@@ -108,6 +108,7 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       aboutUsPageData,
     },
+    revalidate: 10,
   };
 };
 

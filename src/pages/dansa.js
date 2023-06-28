@@ -58,6 +58,7 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       dansaData,
     },
+    revalidate: 10,
   };
 };
 

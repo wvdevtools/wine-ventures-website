@@ -62,6 +62,7 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       cotcData,
     },
+    revalidate: 10,
   };
 };
 

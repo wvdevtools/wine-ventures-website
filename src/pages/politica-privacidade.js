@@ -46,6 +46,7 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       privacyPolicyData,
     },
+    revalidate: 10,
   };
 };
 
