@@ -3,6 +3,7 @@ import styles from '../styles/Contacts.module.css';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
 import useTranslation from 'next-translate/useTranslation';
+import Head from 'next/head';
 
 const Contactos = () => {
   const { t } = useTranslation('contactos');
@@ -41,89 +42,107 @@ const Contactos = () => {
   };
 
   return (
-    <section className={styles.section}>
-      <div className={styles.sectionContainer}>
-        <div className={styles.titleWrapper}>
-          <h1 className={styles.title}>{t('title')}</h1>
-        </div>
-        <div className={styles.contactContainer}>
-          <div className={styles.infoContainer}>
-            <p className={styles.subtitle}>{t('subtitle')}</p>
-            <div className={styles.infoWrapper}>
-              <div className={styles.info}>
-                <div className={styles.iconAndText}>
-                  <Image
-                    src="/images/location-icon.svg"
-                    alt="email"
-                    width={22}
-                    height={25}
-                  />
-                  <span>{t('contacts.address')}</span>
+    <>
+      <Head>
+        <title>Contactos</title>
+        <meta
+          name="description"
+          content="Wine Ventures - Contactos"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <section className={styles.section}>
+        <div className={styles.sectionContainer}>
+          <div className={styles.titleWrapper}>
+            <h1 className={styles.title}>{t('title')}</h1>
+          </div>
+          <div className={styles.contactContainer}>
+            <div className={styles.infoContainer}>
+              <p className={styles.subtitle}>{t('subtitle')}</p>
+              <div className={styles.infoWrapper}>
+                <div className={styles.info}>
+                  <div className={styles.iconAndText}>
+                    <Image
+                      src="/images/location-icon.svg"
+                      alt="email"
+                      width={20}
+                      height={25}
+                    />
+                    {/* <span>{t('contacts.address')}</span> */}
+                    <p>Rua das flores, 28, 2855-630 Lisboa</p>
+                  </div>
+                  {/* <p>Rua das flores, 28, 2855-630 Lisboa</p> */}
                 </div>
-                <p>Rua das flores, 28, 2855-630 Lisboa</p>
-              </div>
-              <div className={styles.info}>
-                <div className={styles.iconAndText}>
-                  <Image
-                    src="/images/mail-icon.svg"
-                    alt="email"
-                    width={28}
-                    height={25}
-                  />
-                  <span>{t('contacts.email')}</span>
+                <div className={styles.info}>
+                  <div className={styles.iconAndText}>
+                    <Image
+                      src="/images/mail-icon.svg"
+                      alt="email"
+                      width={20}
+                      height={25}
+                    />
+                    {/* <span>{t('contacts.email')}</span> */}
+                    <p>info@wineventures.eu</p>
+                  </div>
+                  {/* <p>info@wineventures.eu</p> */}
                 </div>
-                <p>info@wineventures.eu</p>
-              </div>
-              <div className={styles.info}>
-                <div className={styles.iconAndText}>
-                  <Image
-                    src="/images/phone-icon.svg"
-                    alt="phone"
-                    width={20}
-                    height={25}
-                  />
-                  <span>{t('contacts.phone')}</span>
+                <div className={styles.info}>
+                  <div className={styles.iconAndText}>
+                    <Image
+                      src="/images/phone-icon.svg"
+                      alt="phone"
+                      width={20}
+                      height={25}
+                    />
+                    {/* <span>{t('contacts.phone')}</span> */}
+                    <p>+351 91 177 93 56</p>
+                  </div>
+                  {/* <p>+351 91 177 93 56</p> */}
                 </div>
-                <p>+351 91 177 93 56</p>
               </div>
+              {/* <div className={styles.grapesContainer}></div> */}
             </div>
-            {/* <div className={styles.grapesContainer}></div> */}
-          </div>
-          <div className={styles.formContainer}>
-            <p className={styles.formText}>{t('form.title')}</p>
-            <form ref={form} onSubmit={sendEmail} className={styles.form}>
-              <div className={styles.formGroups}>
-                <label>{t('form.name')}</label>
-                <input type="text" name="user_name" className={styles.input} />
-              </div>
-              <div className={styles.formGroups}>
-                <label>{t('form.email')}</label>
-                <input type="email" name="email" className={styles.input} />
-              </div>
-              <div className={styles.formGroups}>
-                <label>{t('form.message')}</label>
-                <textarea
-                  name="message"
-                  className={`${styles.input} ${styles.textarea}`}
+            <div className={styles.formContainer}>
+              <p className={styles.formText}>{t('form.title')}</p>
+              <form ref={form} onSubmit={sendEmail} className={styles.form}>
+                <div className={styles.formGroups}>
+                  <label>{t('form.name')}</label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    className={styles.input}
+                  />
+                </div>
+                <div className={styles.formGroups}>
+                  <label>{t('form.email')}</label>
+                  <input type="email" name="email" className={styles.input} />
+                </div>
+                <div className={styles.formGroups}>
+                  <label>{t('form.message')}</label>
+                  <textarea
+                    name="message"
+                    className={`${styles.input} ${styles.textarea}`}
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value={t('form.send')}
+                  disabled={successMessage || errorMessage || loading}
+                  className={styles.sendBtn}
                 />
-              </div>
-              <input
-                type="submit"
-                value={t('form.send')}
-                disabled={successMessage || errorMessage || loading}
-                className={styles.sendBtn}
-              />
-              {successMessage && (
-                <p className={styles.statusMessage}>{successMessage}</p>
-              )}
-              {errorMessage && (
-                <p className={styles.statusMessage}>{errorMessage}</p>
-              )}
-            </form>
+                {successMessage && (
+                  <p className={styles.statusMessage}>{successMessage}</p>
+                )}
+                {errorMessage && (
+                  <p className={styles.statusMessage}>{errorMessage}</p>
+                )}
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

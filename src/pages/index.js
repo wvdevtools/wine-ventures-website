@@ -1,9 +1,11 @@
 import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import { HeroSection } from '@/components/HeroSection';
 import { BrandsSection } from '@/components/BrandsSection';
 import AboutSection from '@/components/AboutSection';
 import MediaSection from '@/components/MediaSection';
 import useTranslation from 'next-translate/useTranslation';
+import { Fade } from 'react-awesome-reveal';
 //Sanity
 import { groq } from 'next-sanity';
 import { client } from '../lib/sanity.client';
@@ -23,6 +25,17 @@ export default function Home({ articlesData, aboutUsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroSection t={t} />
+      {/* <div className={styles.titleContainer} id="title">
+        <Fade duration={2000}>
+          <h1 className={styles.homeTitle}>
+            <i>
+              "Thinking Outside of the Bottle: Driving Innovation in the Wine
+              World"{' '}
+            </i>
+            - Wine Ventures
+          </h1>
+        </Fade>
+      </div> */}
       <BrandsSection t={t} />
       <AboutSection t={t} aboutUsData={aboutUsData} />
       <MediaSection articlesData={articlesData} t={t} />

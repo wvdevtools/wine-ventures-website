@@ -36,14 +36,14 @@ export const Footer = ({ t }) => {
               height={48}
             />
           </a>
-          <a href="" target="_blank">
+          {/* <a href="" target="_blank">
             <Image
               src="/images/instagram-icon.svg"
               alt="Instagram"
               width={48}
               height={48}
             />
-          </a>
+          </a> */}
           <a href="" target="_blank">
             <Image
               src="/images/linkedin-icon.svg"
@@ -72,8 +72,8 @@ export const Footer = ({ t }) => {
           <Image
             src="/images/white_logo.svg"
             alt="Wine Ventures"
-            width={250}
-            height={111}
+            width={275}
+            height={122}
           />
           <p className={styles.copyText}>
             CopyRight © {currentYear} Wine Ventures By The Glass.
@@ -81,13 +81,14 @@ export const Footer = ({ t }) => {
           </p>
         </div>
         <div className={styles.thirdColumn}>
-          <Image
-            src="/images/livro-reclamacoes.png"
-            alt="Livro de Reclamações"
-            width={175}
-            height={72}
-          />
-
+          <a href="https://www.livroreclamacoes.pt" target="_blank">
+            <Image
+              src="/images/livro-reclamacoes.png"
+              alt="Livro de Reclamações"
+              width={175}
+              height={72}
+            />
+          </a>
           <div className={styles.privacyLinks}>
             <Link href="/termos-condicoes">
               {t('footer.termsAndConditions')}

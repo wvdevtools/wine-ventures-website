@@ -14,13 +14,20 @@
   padding: 5rem 1.5rem;
 }
 
-.homeTitle{
+.homeTitle {
+  text-align: center;
+  color: var(--wine-color);
+  font-size: 42px;
+  line-height: 56px;
+}
+
+/* .homeTitle{
   text-align: center;
   color: var(--wine-color);
   font-style: italic;
   margin-bottom: 1.5rem;
   line-height: 35px;
-}
+} */
 
 .titleWrapper {
   width: fit-content;

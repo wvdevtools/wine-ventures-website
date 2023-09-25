@@ -1,0 +1,16 @@
+.titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.homeTitle {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  color: var(--wine-color);
+  font-size: 42px;
+  line-height: 56px;
+  padding: 5rem 1.5rem 0;
+}

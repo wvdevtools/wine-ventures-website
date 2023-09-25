@@ -15,23 +15,23 @@
   justify-content: center;
 }
 
-/* .section.bgColored {
+.section.bgColored {
   background-color: var(--wine-color);
-} */
+}
 
 .sectionContainer {
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 5rem 1.5rem 0;
+  gap: 4rem;
+  padding: 5rem 1.5rem;
 }
 
-.sectionContainer.sectionBottom {
+/* .sectionContainer.sectionBottom {
   padding-bottom: 5rem;
 }
-
+ */
 .sectionContainer.sectionTop {
   padding-top: 2rem;
 }
@@ -85,9 +85,9 @@
   gap: 0.5rem;
 }
 
-/* .articleBody.whiteText{
+.articleBody.whiteText{
   color: var(--white);
-} */
+}
 
 .containerImages {
   display: flex;

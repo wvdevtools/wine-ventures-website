@@ -7,6 +7,7 @@ import { client } from '../../lib/sanity.client';
 import groq from 'groq';
 import imageUrlBuilder from '@sanity/image-url';
 import { PortableText } from '@portabletext/react';
+import Head from 'next/head';
 
 const Article = ({ article }) => {
   const { t } = useTranslation('common');
@@ -20,37 +21,48 @@ const Article = ({ article }) => {
   return (
     <>
       {article && (
-        <section className={styles.section}>
-          <div className={styles.sectionContainer}>
-            <div className={styles.backLinkContainer}>
-              <Link href="/#media" className={styles.backLink}>
-                <img src="/images/back-arrow.svg" alt="back arrow" />{' '}
-                {t('backLink')}
-              </Link>
-            </div>
-            <div className={styles.articleCard}>
-              <div className={styles.imageContainer}>
-                <Image
-                  src={urlFor(article.mainImage).url()}
-                  alt={article.title}
-                  fill
-                  className={styles.image}
-                />
+        <>
+          <Head>
+            <title>{article.title}</title>
+            <meta name="description" content={`Wine Ventures - ${article.articleSummary}`} />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <section className={styles.section}>
+            <div className={styles.sectionContainer}>
+              <div className={styles.backLinkContainer}>
+                <Link href="/#media" className={styles.backLink}>
+                  <img src="/images/back-arrow.svg" alt="back arrow" />{' '}
+                  {t('backLink')}
+                </Link>
               </div>
-              <div className={styles.articleBodyContainer}>
-                <div className={styles.titleWrapper}>
-                  <h1 className={styles.title}>{article.title}</h1>
+              <div className={styles.articleCard}>
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={urlFor(article.mainImage).url()}
+                    alt={article.title}
+                    fill
+                    className={styles.image}
+                  />
                 </div>
-                <p className={styles.publishedAt}>
-                  {article.publishedAt.split('T')[0]}
-                </p>
-                <article className={styles.articleBody}>
-                  <PortableText value={article.body} />
-                </article>
+                <div className={styles.articleBodyContainer}>
+                  <div className={styles.titleWrapper}>
+                    <h1 className={styles.title}>{article.title}</h1>
+                  </div>
+                  <p className={styles.publishedAt}>
+                    {article.publishedAt.split('T')[0]}
+                  </p>
+                  <article className={styles.articleBody}>
+                    <PortableText value={article.body} />
+                  </article>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </>
       )}
     </>
   );

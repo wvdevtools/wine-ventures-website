@@ -51,6 +51,12 @@ export const AgeGateModal = () => {
               </Link>
             </div>
             <div className={styles.content}>
+              <Image
+                src="/images/white_logo.svg"
+                alt="Wine Ventures Logo"
+                width={175}
+                height={78}
+              />
               <h1>{t('ageGate.title')}</h1>
               <p className={styles.text}>{t('ageGate.text')}</p>
               <div className={styles.btnsContainer}>
@@ -62,13 +68,6 @@ export const AgeGateModal = () => {
                 </button>
               </div>
               {ageError ? <p className={styles.error}>{denyMessage}</p> : null}
-
-              <Image
-                src="/images/white_logo.svg"
-                alt="Wine Ventures Logo"
-                width={175}
-                height={78}
-              />
             </div>
           </div>
         </div>

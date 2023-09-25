@@ -44,9 +44,9 @@ const SobreNos = ({ aboutUsPageData }) => {
         <div className={styles.sectionContainer}>
           <article className={styles.sectionArticle}>
             <div
-              className={`${styles.titleWrapper} ${styles.titleWrapperWhite}`}
+              className={` ${styles.whiteTitleWrapper}`}
             >
-              <h2 className={`${styles.title} ${styles.titleWhite}`}>
+              <h2 className={`${styles.whiteTitle} ${styles.titleWhite}`}>
                 {t('leadershipTitle')}
               </h2>
             </div>
@@ -73,7 +73,7 @@ const SobreNos = ({ aboutUsPageData }) => {
         </div>
       </section>
       <section className={styles.section}>
-        <div className={`${styles.sectionContainer} ${styles.sectionBottom}`}>
+        <div className={`${styles.sectionContainer}`}>
           <article className={styles.sectionArticle}>
             <div className={styles.titleWrapper}>
               <h2 className={styles.title}>{t('sustainabilityTitle')}</h2>

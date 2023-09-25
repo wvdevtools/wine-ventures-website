@@ -31,7 +31,7 @@ export const Navbar = ({ toggleMobileNav, t, iconIsOpen, setIconOpen }) => {
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <Link href="/#marcas">{t('navbar.brands')}</Link>
-            <Link href="/#sobre-nos">{t('navbar.aboutUs')}</Link>
+            <Link href="/sobre-nos">{t('navbar.aboutUs')}</Link>
             <Link href="/#media">{t('navbar.media')}</Link>
             <Link href="/contactos">{t('navbar.contacts')}</Link>
           </ul>
