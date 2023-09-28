@@ -14,6 +14,13 @@ const Contactos = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!form.current.checkValidity()) {
+      setErrorMessage(t('form.error'));
+      setTimeout(() => {
+        setErrorMessage('');
+      }, 10000);
+      return;
+    }
     setLoading(true);
     emailjs
       .sendForm(
@@ -45,10 +52,7 @@ const Contactos = () => {
     <>
       <Head>
         <title>Contactos</title>
-        <meta
-          name="description"
-          content="Wine Ventures - Contactos"
-        />
+        <meta name="description" content="Wine Ventures - Contactos" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -69,10 +73,8 @@ const Contactos = () => {
                       width={20}
                       height={25}
                     />
-                    {/* <span>{t('contacts.address')}</span> */}
                     <p>Rua das flores, 28, 2855-630 Lisboa</p>
                   </div>
-                  {/* <p>Rua das flores, 28, 2855-630 Lisboa</p> */}
                 </div>
                 <div className={styles.info}>
                   <div className={styles.iconAndText}>
@@ -82,10 +84,8 @@ const Contactos = () => {
                       width={20}
                       height={25}
                     />
-                    {/* <span>{t('contacts.email')}</span> */}
                     <p>info@wineventures.eu</p>
                   </div>
-                  {/* <p>info@wineventures.eu</p> */}
                 </div>
                 <div className={styles.info}>
                   <div className={styles.iconAndText}>
@@ -95,13 +95,10 @@ const Contactos = () => {
                       width={20}
                       height={25}
                     />
-                    {/* <span>{t('contacts.phone')}</span> */}
                     <p>+351 91 177 93 56</p>
                   </div>
-                  {/* <p>+351 91 177 93 56</p> */}
                 </div>
               </div>
-              {/* <div className={styles.grapesContainer}></div> */}
             </div>
             <div className={styles.formContainer}>
               <p className={styles.formText}>{t('form.title')}</p>
@@ -112,17 +109,25 @@ const Contactos = () => {
                     type="text"
                     name="user_name"
                     className={styles.input}
+                    required
                   />
                 </div>
                 <div className={styles.formGroups}>
                   <label>{t('form.email')}</label>
-                  <input type="email" name="email" className={styles.input} />
+                  <input
+                    type="email"
+                    name="email"
+                    className={styles.input}
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  />
                 </div>
                 <div className={styles.formGroups}>
                   <label>{t('form.message')}</label>
                   <textarea
                     name="message"
                     className={`${styles.input} ${styles.textarea}`}
+                    required
                   />
                 </div>
                 <input

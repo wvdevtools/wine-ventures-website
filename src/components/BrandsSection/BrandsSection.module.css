@@ -19,6 +19,7 @@
   color: var(--wine-color);
   font-size: 42px;
   line-height: 56px;
+  margin-bottom: 2rem;
 }
 
 /* .homeTitle{

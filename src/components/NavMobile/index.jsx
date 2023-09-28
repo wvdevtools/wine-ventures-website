@@ -17,7 +17,7 @@ export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav, iconIsOpen, set
             <Link href="/#marcas" onClick={handleClickNavLink}>
               {t('navbar.brands')}
             </Link>
-            <Link href="/#sobre-nos" onClick={handleClickNavLink}>
+            <Link href="/sobre-nos" onClick={handleClickNavLink}>
               {t('navbar.aboutUs')}
             </Link>
             <Link href="/#media" onClick={handleClickNavLink}>
