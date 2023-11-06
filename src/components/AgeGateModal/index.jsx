@@ -52,12 +52,12 @@ export const AgeGateModal = () => {
             </div>
             <div className={styles.content}>
               <Image
-                src="/images/white_logo.svg"
+                src="/images/white_logo_simple.svg"
                 alt="Wine Ventures Logo"
-                width={175}
-                height={78}
+                width={250}
+                height={92}
               />
-              <h1>{t('ageGate.title')}</h1>
+              {/* <h1>{t('ageGate.title')}</h1> */}
               <p className={styles.text}>{t('ageGate.text')}</p>
               <div className={styles.btnsContainer}>
                 <button onClick={handleClickNo} className={styles.btns}>
@@ -68,6 +68,9 @@ export const AgeGateModal = () => {
                 </button>
               </div>
               {ageError ? <p className={styles.error}>{denyMessage}</p> : null}
+              <p className={styles.moderationText}>
+                {t('ageGate.drinkModeration')}
+              </p>
             </div>
           </div>
         </div>

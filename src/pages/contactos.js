@@ -4,6 +4,7 @@ import Image from 'next/image';
 import emailjs from '@emailjs/browser';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
+import Trans from 'next-translate/Trans';
 
 const Contactos = () => {
   const { t } = useTranslation('contactos');
@@ -57,21 +58,22 @@ const Contactos = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.section}>
+        <h1 className={styles.pageTitle}>{t('title')}</h1>
+        <h2 className={styles.subtitle}>
+          <Trans i18nKey="contactos:subtitle" components={{ br: <br /> }} />
+        </h2>
+
         <div className={styles.sectionContainer}>
-          <div className={styles.titleWrapper}>
-            <h1 className={styles.title}>{t('title')}</h1>
-          </div>
           <div className={styles.contactContainer}>
             <div className={styles.infoContainer}>
-              <p className={styles.subtitle}>{t('subtitle')}</p>
               <div className={styles.infoWrapper}>
                 <div className={styles.info}>
                   <div className={styles.iconAndText}>
                     <Image
                       src="/images/location-icon.svg"
                       alt="email"
-                      width={20}
-                      height={25}
+                      width={25}
+                      height={30}
                     />
                     <p>Rua das flores, 28, 2855-630 Lisboa</p>
                   </div>
@@ -81,8 +83,8 @@ const Contactos = () => {
                     <Image
                       src="/images/mail-icon.svg"
                       alt="email"
-                      width={20}
-                      height={25}
+                      width={25}
+                      height={30}
                     />
                     <p>info@wineventures.eu</p>
                   </div>
@@ -92,8 +94,8 @@ const Contactos = () => {
                     <Image
                       src="/images/phone-icon.svg"
                       alt="phone"
-                      width={20}
-                      height={25}
+                      width={25}
+                      height={30}
                     />
                     <p>+351 91 177 93 56</p>
                   </div>
@@ -104,30 +106,33 @@ const Contactos = () => {
               <p className={styles.formText}>{t('form.title')}</p>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <div className={styles.formGroups}>
-                  <label>{t('form.name')}</label>
+                  {/*  <label>{t('form.name')}</label> */}
                   <input
                     type="text"
                     name="user_name"
                     className={styles.input}
                     required
+                    placeholder={t('form.name')}
                   />
                 </div>
                 <div className={styles.formGroups}>
-                  <label>{t('form.email')}</label>
+                  {/* <label>{t('form.email')}</label> */}
                   <input
                     type="email"
                     name="email"
                     className={styles.input}
                     required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder={t('form.email')}
                   />
                 </div>
                 <div className={styles.formGroups}>
-                  <label>{t('form.message')}</label>
+                  {/* <label>{t('form.message')}</label> */}
                   <textarea
                     name="message"
                     className={`${styles.input} ${styles.textarea}`}
                     required
+                    placeholder={t('form.message')}
                   />
                 </div>
                 <input

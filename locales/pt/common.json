@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "aboutUs": "Sobre Nós",
+    "aboutUs": "Sobre",
     "vision": "Visão",
     "brands": "Marcas",
     "media": "Media",
@@ -11,7 +11,8 @@
     "text": "Confirma ter a idade legal para consumir bebidas alcoólicas?",
     "buttonYes": "Sim",
     "buttonNo": "Não",
-    "denyMessage": "Desculpe, mas não pode aceder a este site."
+    "denyMessage": "Desculpe, mas não pode aceder a este site.",
+    "drinkModeration": "Seja responsável. Beba com moderação."
   },
   "footer": {
     "copyRights": "Todos os direitos reservados.",

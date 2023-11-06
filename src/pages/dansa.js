@@ -1,35 +1,92 @@
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import styles from '../styles/BrandsPage.module.css';
+import Trans from 'next-translate/Trans';
 //Sanity
-import { groq } from 'next-sanity';
+/* import { groq } from 'next-sanity';
 import { client } from '../lib/sanity.client';
-import { PortableText } from '@portabletext/react';
+import { PortableText } from '@portabletext/react'; */
 import Image from 'next/image';
 
-const Dansa = ({ dansaData }) => {
+const CrimeOfTheCentury = () => {
   const { t } = useTranslation('dansa');
 
-  console.log('dansaData: ', dansaData);
-
   return (
-    <section className={styles.section}>
+    <section className={styles.main}>
       <div className={styles.sectionContainer}>
-        <div className={styles.backLinkContainer}>
-          <Link href="/#marcas" className={styles.backLink}>
-            <img src="/images/back-arrow.svg" alt="back arrow" />{' '}
-            {t('backLink')}
-          </Link>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.pageTitle}>{t('title')}</h1>
         </div>
-        <div className={styles.titleWrapper}>
-          <h1 className={styles.title}>{t('title')}</h1>
+
+        <div className={styles.firstSectionContainer}>
+          <article className={styles.articleContainer}>
+            <div className={styles.imageContainer}>
+              <Image
+                src="/images/dansa_sangria.jpg"
+                alt="Dansa sangria"
+                fill={true}
+                className={styles.image}
+              />
+            </div>
+            <h2 className={styles.title}>
+              <Trans
+                i18nKey="dansa:articleTitle"
+                components={{
+                  b: <z className={styles.bold} />,
+                }}
+              />
+            </h2>
+
+            <p className={styles.text}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
+              nunc eget odio ultricies aliquet. Sed euismod, nisl quis
+              consectetur ultricies, nisl nibh aliquam nunc, quis ultrices
+              libero nisl quis nunc. Sed euismod, nisl quis consectetur
+              ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis.
+            </p>
+            <Link
+              href="https://crimeofthecentury.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.button}
+            >
+              {t('knowMore')}
+            </Link>
+          </article>
         </div>
-        <div className={styles.contentContainer}>
-          <div className={styles.dansaImageContainer}>
-            <Image src="/images/dansa-content-logo.png" alt="Dansa logo" fill priority />
-          </div>
-          <article className={styles.article}>
-            <PortableText value={dansaData[0].dansaBrandText} />
+        {/* <div className={styles.bottomImageContainer}>
+          <Image
+            src="/images/dansa_bottom.jpg"
+            alt="Dansa sangria"
+            fill={true}
+          />
+        </div> */}
+      </div>
+    </section>
+  );
+};
+
+/* export const getStaticProps = async ({ locale }) => {
+  const cotcQuery = groq`*[_type == "cotcBrand" && __i18n_lang == "${locale}"]{
+    _id,
+    title,
+    cotcBrandText
+  }`;
+
+  const cotcData = await client.fetch(cotcQuery);
+
+  return {
+    props: {
+      cotcData,
+    },
+    revalidate: 10,
+  };
+}; */
+
+export default CrimeOfTheCentury;
+
+{
+  /* <PortableText value={cotcData[0].cotcBrandText} />
             <Link
               href="https://crimeofthecentury.eu/"
               target="_blank"
@@ -37,29 +94,5 @@ const Dansa = ({ dansaData }) => {
               className={styles.button}
             >
               Website
-            </Link>
-          </article>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export const getStaticProps = async ({ locale }) => {
-  const dansaQuery = groq`*[_type == "dansaBrand" && __i18n_lang == "${locale}"]{
-    _id,
-    title,
-    dansaBrandText
-  }`;
-
-  const dansaData = await client.fetch(dansaQuery);
-
-  return {
-    props: {
-      dansaData,
-    },
-    revalidate: 10,
-  };
-};
-
-export default Dansa;
+            </Link> */
+}

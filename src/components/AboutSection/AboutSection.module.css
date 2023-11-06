@@ -2,30 +2,53 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--wine-color);
+  /* background-color: var(--wine-color); */
   scroll-margin-top: 80px;
 }
 
 .sectionContainer {
   width: 100%;
   max-width: 1200px;
+  padding: 5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  gap: 3rem 2rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'Title Image'
+    'Text Image'
+    'Button Image';
+}
+
+/* .textContainer {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 5rem 1.5rem;
+  flex: 1;
+} */
+
+.imageContainer {
+  position: relative;
+  grid-area: Image;
 }
 
-.titleWrapper {
+.image {
+  object-fit: cover;
+}
+
+/* .titleWrapper {
   width: fit-content;
   border-left: 5px solid var(--white);
   padding-left: 10px;
-}
+} */
 
 .title {
   font-size: 2rem;
   font-weight: 700;
   line-height: 35px;
-  color: var(--white);
+  color: var(--black);
+  grid-area: Title;
   /* text-decoration: underline;
   text-decoration-color: var(--white);
   text-underline-offset: 0.3em; */
@@ -34,8 +57,9 @@
 .text {
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--white);
+  color: var(--black);
   line-height: 1.5;
+  grid-area: Text;
 }
 
 .button {
@@ -44,13 +68,27 @@
   align-items: center;
   padding: 0.5rem 1rem;
   width: 160px;
-  background-color: var(--white);
+  background-color: var(--wine-color);
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--wine-color);
+  /* font-weight: 700; */
+  color: var(--white);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  grid-area: Button;
+}
+
+@media screen and (max-width: 480px) {
+  .sectionContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.2fr;
+    gap: 2rem;
+    grid-template-areas:
+      'Title'
+      'Image'
+      'Text'
+      'Button';
+  }
 }
