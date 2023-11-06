@@ -32,6 +32,11 @@
   text-align: center;
 }
 
+.moderationText {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
 .btnsContainer {
   display: flex;
   gap: 1rem;

@@ -7,7 +7,7 @@
     "/contactos": ["contactos"],
     "/crime-of-the-century": ["cotc"],
     "/dansa": ["dansa"],
-    "/sobre-nos": ["sobreNos"],
+    "/sobre": ["sobreNos"],
     "/politica-privacidade": ["politicaPrivacidade"],
     "/termos-condicoes": ["termosCondicoes"]
   }

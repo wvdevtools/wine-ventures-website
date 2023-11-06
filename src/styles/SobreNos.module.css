@@ -1,110 +1,135 @@
-.backLinkContainer {
-  align-self: flex-start;
-  border-bottom: var(--wine-color) 2px solid;
-}
-.backLink {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--wine-color);
-  text-decoration: none;
-}
-
-.section {
+.main {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section.bgColored {
-  background-color: var(--wine-color);
+.pageTitle {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2.5rem 1.5rem;
+  color: var(--wine-color);
+  text-transform: uppercase;
 }
 
-.sectionContainer {
+.firstSectionContainer {
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding: 5rem 1.5rem;
+  gap: 5rem;
+  padding: 0.5rem 1.5rem 2.5rem;
 }
 
-/* .sectionContainer.sectionBottom {
-  padding-bottom: 5rem;
-}
- */
-.sectionContainer.sectionTop {
-  padding-top: 2rem;
-}
-
-.whiteTitleWrapper {
-  width: fit-content;
-  border-left: 5px solid var(--white);
-  padding-left: 10px;
+.articleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 2rem 4rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'Title Image'
+    'Text Image';
 }
 
-.whiteTitle {
-  font-size: 2rem;
-  font-weight: 700;
+.imageContainer {
+  position: relative;
+  grid-area: Image;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black);
   line-height: 35px;
-  color: var(--white);
-}
-
-.titleWrapper {
-  width: fit-content;
-  border-left: 5px solid var(--wine-color);
-  padding-left: 10px;
+  grid-area: Text;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 44px;
+  color: var(--black);
+  grid-area: Title;
+  text-transform: uppercase;
+}
+
+.bold {
   font-weight: 700;
-  line-height: 35px;
-  color: #000;
+}
+
+.secondSectionContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2.5rem 1.5rem 5rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
   line-height: 35px;
+  font-weight: 400;
   color: #000;
   padding: 1rem 0 1.5rem;
 }
 
-.sectionArticle {
+.titleContainer {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-}
-
-.articleBody {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--black);
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.articleBody.whiteText{
-  color: var(--white);
-}
-
-.containerImages {
-  display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.imageContainer {
-  position: relative;
-  position: relative;
+.profilesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 768px;
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 16/9;
 }
 
-@media screen and (max-width: 480px) {
-  .containerImages {
+.profileColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 325px;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profileText {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 35px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .articleContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'Title'
+      'Image'
+      'Text';
+  }
+
+  .profilesContainer {
     flex-direction: column;
+    align-items: center;
   }
 }

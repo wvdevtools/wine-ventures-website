@@ -2,9 +2,15 @@ import Link from 'next/link';
 import styles from './NavMobile.module.css';
 import { useRouter } from 'next/router';
 
-export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav, iconIsOpen, setIconOpen }) => {
+export const NavMobile = ({
+  mobileNavisOpen,
+  t,
+  toggleMobileNav,
+  iconIsOpen,
+  setIconOpen,
+}) => {
   const router = useRouter();
-  
+
   const handleClickNavLink = () => {
     toggleMobileNav();
     setIconOpen(!iconIsOpen);
@@ -17,7 +23,7 @@ export const NavMobile = ({ mobileNavisOpen, t, toggleMobileNav, iconIsOpen, set
             <Link href="/#marcas" onClick={handleClickNavLink}>
               {t('navbar.brands')}
             </Link>
-            <Link href="/sobre-nos" onClick={handleClickNavLink}>
+            <Link href="/sobre" onClick={handleClickNavLink}>
               {t('navbar.aboutUs')}
             </Link>
             <Link href="/#media" onClick={handleClickNavLink}>

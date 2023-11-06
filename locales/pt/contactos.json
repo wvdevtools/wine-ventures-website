@@ -1,6 +1,6 @@
 {
   "title": "Contactos",
-  "subtitle": "Entre em contato conosco, vamos falar sobre vinhos!",
+  "subtitle": "Entre em contacto, <br/> vamos falar sobre vinhos!",
   "contacts": {
     "address": "Morada",
     "email": "E-mail",
@@ -12,7 +12,7 @@
     "email": "E-mail",
     "message": "Mensagem",
     "send": "Enviar",
-    "success": "Mensagem enviada com sucesso! Entraremos em contato assim que possível.",	
+    "success": "Mensagem enviada com sucesso! Entraremos em contato assim que possível.",
     "error": "Erro ao enviar mensagem, tente novamente mais tarde."
   }
 }

@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "aboutUs": "About Us",
+    "aboutUs": "About",
     "vision": "Vision",
     "brands": "Brands",
     "media": "Media",
@@ -11,7 +11,8 @@
     "text": "Do you confirm that you are of legal age to consume alcoholic beverages?",
     "buttonYes": "Yes",
     "buttonNo": "No",
-    "denyMessage": "Sorry, but you cannot access this site."
+    "denyMessage": "Sorry, but you cannot access this site.",
+    "drinkModeration": "Enjoy responsibly. Drink in moderation."
   },
   "footer": {
     "copyRights": "All Rights Reserved",
