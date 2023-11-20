@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './MediaSection.module.css';
 import { MediaCard } from '../MediaCard';
 import { Fade } from 'react-awesome-reveal';
+import { arimo } from '@/utils/fonts';
 
 const MediaSection = ({ articlesData, t }) => {
   const [articles, setArticles] = useState(articlesData);
@@ -30,7 +31,9 @@ const MediaSection = ({ articlesData, t }) => {
   return (
     <section className={styles.section} id="media">
       <div className={styles.sectionContainer}>
-        <h2 className={styles.title}>{t('media.title')}</h2>
+        <h2 className={`${arimo.className} ${styles.title}`}>
+          {t('media.title')}
+        </h2>
         <Fade>
           <div className={styles.cards}>
             {articles.slice(0, showAll ? articles.length : 3).map((article) => (

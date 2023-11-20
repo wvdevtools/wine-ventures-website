@@ -2,6 +2,7 @@ import styles from '../../styles/Article.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import { arimo } from '@/utils/fonts';
 //Sanity
 import { client } from '../../lib/sanity.client';
 import groq from 'groq';
@@ -24,7 +25,10 @@ const Article = ({ article }) => {
         <>
           <Head>
             <title>{article.title}</title>
-            <meta name="description" content={`Wine Ventures - ${article.articleSummary}`} />
+            <meta
+              name="description"
+              content={`Wine Ventures - ${article.articleSummary}`}
+            />
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1"
@@ -49,9 +53,11 @@ const Article = ({ article }) => {
                   />
                 </div>
                 <div className={styles.articleBodyContainer}>
-                  <div className={styles.titleWrapper}>
-                    <h1 className={styles.title}>{article.title}</h1>
-                  </div>
+                  {/* <div className={styles.titleWrapper}> */}
+                  <h1 className={`${arimo.className} ${styles.title}`}>
+                    {article.title}
+                  </h1>
+                  {/* </div> */}
                   <p className={styles.publishedAt}>
                     {article.publishedAt.split('T')[0]}
                   </p>

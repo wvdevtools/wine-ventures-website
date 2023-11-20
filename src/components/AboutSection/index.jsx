@@ -2,6 +2,7 @@ import styles from './AboutSection.module.css';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';
 import Image from 'next/image';
+import { arimo } from '@/utils/fonts';
 
 const AboutSection = ({ t }) => {
   return (
@@ -17,7 +18,9 @@ const AboutSection = ({ t }) => {
             />
           </Fade>
         </div>
-        <h2 className={styles.title}>{t('aboutUs.title')}</h2>
+        <h2 className={`${arimo.className} ${styles.title}`}>
+          {t('aboutUs.title')}
+        </h2>
         <Fade>
           <p className={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a

@@ -7,6 +7,7 @@ import Trans from 'next-translate/Trans';
 import { client } from '../lib/sanity.client';
 import { PortableText } from '@portabletext/react'; */
 import Image from 'next/image';
+import { arimo } from '@/utils/fonts';
 
 const CrimeOfTheCentury = () => {
   const { t } = useTranslation('dansa');
@@ -15,7 +16,9 @@ const CrimeOfTheCentury = () => {
     <section className={styles.main}>
       <div className={styles.sectionContainer}>
         <div className={styles.titleContainer}>
-          <h1 className={styles.pageTitle}>{t('title')}</h1>
+          <h1 className={`${arimo.className} ${styles.pageTitle}`}>
+            {t('title')}
+          </h1>
         </div>
 
         <div className={styles.firstSectionContainer}>
@@ -44,12 +47,7 @@ const CrimeOfTheCentury = () => {
               libero nisl quis nunc. Sed euismod, nisl quis consectetur
               ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis.
             </p>
-            <Link
-              href="https://crimeofthecentury.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.button}
-            >
+            <Link href="/contactos" className={styles.button}>
               {t('knowMore')}
             </Link>
           </article>

@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </div>
       </div> */}
 
-      <Link className={styles.scrollDownImageContainer} href="#marcas">
+      <Link className={styles.scrollDownImageContainer} href="#home">
         <img
           src="/images/scroll-down.svg"
           alt="scroll down icon"

@@ -28,7 +28,11 @@ export const Footer = ({ t }) => {
     <div className={styles.sectionContainer}>
       <div className={styles.firstColumn}>
         <div className={styles.socialIcons}>
-          <a href="" target="_blank">
+          <a
+            href="https://www.facebook.com/wineventuressa"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/images/facebook-icon.svg"
               alt="Facebook"
@@ -44,7 +48,11 @@ export const Footer = ({ t }) => {
               height={48}
             />
           </a> */}
-          <a href="" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/wine-ventures-lda"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/images/linkedin-icon.svg"
               alt="Linkdin"
@@ -54,7 +62,11 @@ export const Footer = ({ t }) => {
           </a>
         </div>
         <div className={styles.wineModerationContainer}>
-          <a href="https://www.wineinmoderation.eu/" target="_blank">
+          <a
+            href="https://www.wineinmoderation.eu/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/images/wine-moderation.svg"
               alt="Wine Moderation"
@@ -81,7 +93,11 @@ export const Footer = ({ t }) => {
           </p>
         </div>
         <div className={styles.thirdColumn}>
-          <a href="https://www.livroreclamacoes.pt" target="_blank">
+          <a
+            href="https://www.livroreclamacoes.pt"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/images/livro-reclamacoes.png"
               alt="Livro de Reclamações"

@@ -2,10 +2,11 @@ import styles from './BrandsSection.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';
+import { arimo } from '@/utils/fonts';
 
 export const BrandsSection = ({ t }) => {
   return (
-    <section className={styles.section} id="marcas">
+    <section className={styles.section} id="home">
       <div className={styles.sectionContainer}>
         <Fade duration={2000}>
           <h1 className={styles.homeTitle}>
@@ -14,9 +15,10 @@ export const BrandsSection = ({ t }) => {
           </h1>
         </Fade>
 
-        <div className={styles.titleWrapper}>
-          <h2 className={styles.title}>{t('brands.title')}</h2>
-        </div>
+        <h2 className={`${arimo.className} ${styles.title}`} id="marcas">
+          {t('brands.title')}
+        </h2>
+
         <Fade duration={2000}>
           <p className={styles.subtitle}>{t('brands.subtitle')}</p>
 

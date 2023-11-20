@@ -7,6 +7,7 @@ import Trans from 'next-translate/Trans';
 import { client } from '../lib/sanity.client';
 import { PortableText } from '@portabletext/react'; */
 import Image from 'next/image';
+import { arimo } from '@/utils/fonts';
 
 const CrimeOfTheCentury = () => {
   const { t } = useTranslation('cotc');
@@ -15,8 +16,12 @@ const CrimeOfTheCentury = () => {
     <section className={styles.main}>
       <div className={styles.sectionContainer}>
         <div className={styles.titleContainer}>
-          <h1 className={styles.pageTitle}>{t('title')}</h1>
-          <h2 className={styles.subtitle}>{t('subTitle')}</h2>
+          <h1 className={`${arimo.className} ${styles.pageTitle}`}>
+            {t('title')}
+          </h1>
+          <h2 className={`${arimo.className} ${styles.subtitle}`}>
+            {t('subTitle')}
+          </h2>
         </div>
 
         <div className={styles.firstSectionContainer}>

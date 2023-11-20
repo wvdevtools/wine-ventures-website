@@ -5,7 +5,7 @@ import { AgeGateModal } from '@/components/AgeGateModal';
 import { Navbar } from '@/components/Navbar';
 import { NavMobile } from '@/components/NavMobile';
 import { Footer } from '@/components/Footer';
-import { roboto, didact } from '@/utils/fonts';
+import { roboto, didact, arimo } from '@/utils/fonts';
 import useTranslation from 'next-translate/useTranslation';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <header className={roboto.className}>
+      <header className={arimo.className}>
         <Navbar
           toggleMobileNav={toggleMobileNav}
           t={t}

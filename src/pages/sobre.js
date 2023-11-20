@@ -2,6 +2,7 @@ import styles from '../styles/SobreNos.module.css';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import Trans from 'next-translate/Trans';
+import { arimo } from '@/utils/fonts';
 /* import Link from 'next/link'; */
 //Sanity
 /* import { groq } from 'next-sanity';
@@ -20,7 +21,9 @@ const SobreNos = (/* { aboutUsPageData } */) => {
 
   return (
     <section className={styles.main}>
-      <h1 className={styles.pageTitle}>{t('pageTitle')}</h1>
+      <h1 className={`${arimo.className} ${styles.pageTitle}`}>
+        {t('pageTitle')}
+      </h1>
       <section className={styles.firstSectionContainer}>
         <article className={styles.articleContainer}>
           <div className={styles.imageContainer}>
@@ -31,7 +34,7 @@ const SobreNos = (/* { aboutUsPageData } */) => {
               className={styles.image}
             />
           </div>
-          <h2 className={styles.title}>
+          <h2 className={`${arimo.className} ${styles.title}`}>
             <Trans
               i18nKey="sobreNos:firstArticleTitle"
               components={{
@@ -57,7 +60,7 @@ const SobreNos = (/* { aboutUsPageData } */) => {
               className={styles.image}
             />
           </div>
-          <h2 className={styles.title}>
+          <h2 className={`${arimo.className} ${styles.title}`}>
             <Trans
               i18nKey="sobreNos:secondArticleTitle"
               components={{
@@ -77,7 +80,9 @@ const SobreNos = (/* { aboutUsPageData } */) => {
       </section>
       <section className={styles.secondSectionContainer}>
         <div className={styles.titleContainer}>
-          <h2 className={styles.title}>{t('leadershipTitle')}</h2>
+          <h2 className={`${arimo.className} ${styles.title}`}>
+            {t('leadershipTitle')}
+          </h2>
           <h3 className={styles.subTitle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </h3>
@@ -91,7 +96,9 @@ const SobreNos = (/* { aboutUsPageData } */) => {
                 width={325}
                 height={332}
               />
-              <figcaption>Francisco de Sousa Ferreira</figcaption>
+              <figcaption className={styles.figcaption}>
+                Francisco de Sousa Ferreira
+              </figcaption>
             </figure>
             <p className={styles.profileText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
@@ -107,7 +114,9 @@ const SobreNos = (/* { aboutUsPageData } */) => {
                 width={325}
                 height={332}
               />
-              <figcaption>Maria Godinho</figcaption>
+              <figcaption className={styles.figcaption}>
+                Maria Godinho
+              </figcaption>
             </figure>
             <p className={styles.profileText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
