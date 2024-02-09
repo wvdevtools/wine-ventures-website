@@ -13,6 +13,7 @@
     "message": "Message",
     "send": "Send",
     "success": "Message sent successfully! We will contact you as soon as possible.",
-    "error": "Error sending message! Please try again later."
+    "error": "Error sending message! Please try again later.",
+    "consent": "By submitting this form, you consent to our <a>Terms and Conditions</a>."
   }
 }

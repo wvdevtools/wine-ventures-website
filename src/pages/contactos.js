@@ -6,6 +6,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import Trans from 'next-translate/Trans';
 import { arimo } from '@/utils/fonts';
+import Link from 'next/link';
 
 const Contactos = () => {
   const { t } = useTranslation('contactos');
@@ -49,6 +50,8 @@ const Contactos = () => {
         }
       );
   };
+
+  console.log('successMessage', successMessage);
 
   return (
     <>
@@ -148,6 +151,17 @@ const Contactos = () => {
                     required
                     placeholder={t('form.message')}
                   />
+                </div>
+                <div className={styles.consentContainer}>
+                  <input type="checkbox" name="terms" required />
+                  <label htmlFor="terms">
+                    <Trans
+                      i18nKey="contactos:form.consent"
+                      components={{
+                        a: <Link href="/termos-condicoes"></Link>,
+                      }}
+                    />
+                  </label>
                 </div>
                 <input
                   type="submit"
