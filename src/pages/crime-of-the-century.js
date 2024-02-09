@@ -2,10 +2,6 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import styles from '../styles/BrandsPage.module.css';
 import Trans from 'next-translate/Trans';
-//Sanity
-/* import { groq } from 'next-sanity';
-import { client } from '../lib/sanity.client';
-import { PortableText } from '@portabletext/react'; */
 import Image from 'next/image';
 import { arimo } from '@/utils/fonts';
 
@@ -74,33 +70,4 @@ const CrimeOfTheCentury = () => {
   );
 };
 
-/* export const getStaticProps = async ({ locale }) => {
-  const cotcQuery = groq`*[_type == "cotcBrand" && __i18n_lang == "${locale}"]{
-    _id,
-    title,
-    cotcBrandText
-  }`;
-
-  const cotcData = await client.fetch(cotcQuery);
-
-  return {
-    props: {
-      cotcData,
-    },
-    revalidate: 10,
-  };
-}; */
-
 export default CrimeOfTheCentury;
-
-{
-  /* <PortableText value={cotcData[0].cotcBrandText} />
-            <Link
-              href="https://crimeofthecentury.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.button}
-            >
-              Website
-            </Link> */
-}

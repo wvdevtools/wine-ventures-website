@@ -14,7 +14,6 @@ export const BrandsSection = ({ t }) => {
             <span> Driving Innovation in the Wine World</span>
           </h1>
         </Fade>
-
         <Fade>
           <h2 className={`${arimo.className} ${styles.title}`} id="marcas">
             {t('brands.title')}

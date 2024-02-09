@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
   background-color: var(--wine-color);
   z-index: 100;
   padding: 5rem 0;
@@ -19,7 +19,6 @@
     opacity: 1;
   }
 }
-
 
 .list {
   display: flex;

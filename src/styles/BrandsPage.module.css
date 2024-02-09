@@ -44,10 +44,6 @@
     'Button Image';
 }
 
-/* .dansaGrid {
-  grid-template-columns: 2fr 1fr;
-} */
-
 .title {
   font-size: 1.8rem;
   font-weight: 400;
@@ -115,22 +111,11 @@
   grid-area: Button;
 }
 
-/* .bottomImageContainer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 5rem;
-} */
-
 .bottomImageContainer {
   width: 100%;
   position: relative;
+  margin-top: 2rem;
 }
-
-/* .bottomImage {
-  width: 100%;
-  height: auto;
-} */
 
 .bottomImage {
   width: 100%;

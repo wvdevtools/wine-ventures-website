@@ -2,10 +2,6 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import styles from '../styles/BrandsPage.module.css';
 import Trans from 'next-translate/Trans';
-//Sanity
-/* import { groq } from 'next-sanity';
-import { client } from '../lib/sanity.client';
-import { PortableText } from '@portabletext/react'; */
 import Image from 'next/image';
 import { arimo } from '@/utils/fonts';
 
