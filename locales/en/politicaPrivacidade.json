@@ -1,4 +1,104 @@
 {
-  "backLink": "Voltar",
-  "title": "Privacy Policy"
+  "backLink": "To go back",
+  "title": "Privacy Policy",
+  "firstParagraph": "In connection with the provision of the website hosted at http://wineventures.eu/ (“Site”) and the services and communications available there, Wine Ventures by The Glass, S.A. (“WVBTG”), under legal entity number 510929435 , with headquarters at Rua Júlio da Silva Pinto, no. 9, in Lisbon, may request the User to provide personal data, that is, information provided by the User that allows WVBTG to identify and/or contact him (“Data Personal\").",
+  "firstPoint": {
+    "title": "1. Collection and processing of user data",
+    "firstParagraph": "In connection with the provision of the website hosted at http://wineventures.eu/ (“Site”) and the services and communications available there, Wine Ventures by The Glass, S.A. (“WVBTG”), under legal entity number 510929435 , with headquarters at Rua Júlio da Silva Pinto, no. 9, in Lisbon, may request the User to provide personal data, that is, information provided by the User that allows WVBTG to identify and/or contact him (“Data Personal\").",
+    "secondParagraph": "As a rule, Personal Data is requested when the User:",
+    "secondParagraphlist": [
+      "register on the Site;",
+      "request contact from WVBTG using the form available on the Website;"
+    ],
+    "thirdParagraphs": [
+      "The Personal Data collected and processed consists of information relating to the name, email address and other personal information provided by the User.",
+      "When directly collecting Personal Data, WVBTG provides the User with detailed information about the nature of the data collected and about the purpose and processing that will be carried out in relation to the Personal Data, as well as the information mentioned in clause 7, through the consult the Privacy Policy available on the Website.",
+      "WVBTG also collects and processes information about its hardware and software, as well as information about the pages visited by the User within the Website. ",
+      "Usability Information and Personal Data are referred to in this Privacy Policy as “User Data”."
+    ]
+  },
+  "secondPoint": {
+    "title": "2. Subcontracted entities",
+    "paragraphs": [
+      "In the context of the processing of User Data, WVBTG may use third party entities, subcontracted by it, so that, on behalf of WVBTG, and in accordance with the instructions given by it, they process User Data, in strict compliance with the provisions of the law and this Privacy Policy.",
+      "These subcontracted entities may not transmit User Data to other entities without WVBTG having previously given written authorization to do so, and are also prevented from contracting other entities without prior authorization from WVBTG.",
+      "WVBTG is committed to subcontracting only entities that present sufficient guarantees of carrying out appropriate technical and organizational measures, in order to ensure the defense of the User's rights. "
+    ]
+  },
+  "thirdPoint": {
+    "title": "3. General principles applicable to the processing of user data",
+    "firstParagraph": "In terms of general principles relating to the processing of Personal Data, WVBTG undertakes to ensure that the User Data processed by it is:",
+    "firstParagraphlist": [
+      "Object of lawful, fair and transparent treatment in relation to the User;",
+      "Collected for specific, explicit and legitimate purposes, not being further processed in a way that is incompatible with those purposes;",
+      "Adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed;",
+      "Accurate and updated whenever necessary, with all appropriate measures being adopted so that inaccurate data, taking into account the purposes for which they are processed, are erased or rectified without delay;",
+      "Kept in a way that allows the User to be identified only for the period necessary for the purposes for which the data is processed;",
+      "Processed in a way that guarantees its security, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, with appropriate technical or organizational measures being adopted."
+    ],
+    "thirdParagraph": "Data processing carried out by WVBTG is lawful when at least one of the following situations occurs:",
+    "thirdParagraphlist": [
+      "The User has given their explicit consent to the processing of User Data for one or more specific purposes;",
+      "The processing is necessary for the execution of a contract to which the User is a party, or for pre-contractual measures at the User's request;",
+      "The processing is necessary to comply with a legal obligation to which WVBTG is subject;",
+      "The processing is necessary to defend the vital interests of the User or another natural person;",
+      "The processing is necessary for the purposes of the legitimate interests pursued by WVBTG or third parties (except if the interests or fundamental rights and freedoms of the User that require the protection of Personal Data prevail)."
+    ],
+    "fourthParagraphs": [
+      "WVBTG undertakes to ensure that the processing of User Data is only carried out under the conditions listed above and with respect for the principles mentioned above.",
+      "When the processing of User Data is carried out by WVBTG based on the User's consent, the User has the right to withdraw their consent at any time. ",
+      "The period of time for which data is stored and preserved varies according to the purpose for which the information is processed.",
+      "The data will be stored and preserved only for the minimum period necessary for the purposes that motivated its collection or subsequent processing, after which it will be deleted."
+    ],
+    "pointA": "a. Use and purposes of processing user data",
+    "pointAfirsParagraph": "In general terms, WVBTG uses User Data for the following purposes:",
+    "pointAfirstParagraphlist": [
+      "Market WVBTG products and provide WVBTG services;",
+      "Inform the User of new products and services, through any means of communication, it being a legitimate interest of WVBTG to do so, without prejudice to the data subject's right to object to this processing at any time;",
+      "Allow access to restricted areas of the Website, in accordance with previously established terms;",
+      "Provision of Services, and other services, such as newsletters, opinion surveys, or other information or products requested or consented to by the User;"
+    ],
+    "pointAsecondParagraphs": [
+      "WVBTG may also contact representatives of corporate clients, for the purposes of presenting WVBTG products and services, translating into WVBTG's legitimate interest in doing so, without prejudice to the data subject's right to object to this processing at any time. .",
+      "Under applicable legal terms, WVBTG may transmit or communicate User Data to other entities if such transmission or communication is necessary for the execution of the contract established between the User and WVBTG, or for pre-contractual measures at the User's request. , if it is necessary to comply with a legal obligation to which WVBTG is subject or if it is necessary for the purposes of pursuing the legitimate interests of WVBTG or a third party."
+    ],
+    "pointB": "b. Technical, organizational and security measures implemented",
+    "pointBparagraphs": [
+      "To guarantee the security of User Data and maximum confidentiality, WVBTG treats the information provided to it in an absolutely confidential manner, in accordance with its internal security and confidentiality policies and procedures, which are updated periodically depending on the needs, as well as in accordance with the legally established terms and conditions.",
+      "Depending on the nature, scope, context and purposes of data processing, as well as the risks arising from processing for the User's rights and freedoms, WVBTG undertakes to apply, both when defining the means of processing as well as at the time of the processing itself, the necessary and appropriate technical and organizational measures to protect User Data and comply with legal requirements."
+    ],
+    "pointC": "c. Use of cookies",
+    "pointCparagraphs": [
+      "Cookies are small information files that are sent to your computer or cell phone when you visit a website. ",
+      "The ability to activate, deactivate or delete cookies can also be done in your browser. ",
+      "When blocking or deleting cookies, you may not be able to fully enjoy the website's features."
+    ]
+  },
+  "fourthPoint": {
+    "title": "4. User rights (data subjects)",
+    "pointA": "a. Procedures for exercising rights by the user",
+    "pointAparagraphs": [
+      "The right to access, the right to rectification, the right to erasure, the right to limitation, the right to portability and the right to object can be exercised by the User by contacting WVBTG, via email at info@wineventures.eu .",
+      "WVBTG will respond in writing (including by electronic means) to the User's request within a maximum period of one month from receipt of the request, except in cases of particular complexity, in which this period may be extended up to two months.",
+      "If requests submitted by the User are manifestly unfounded or excessive, particularly due to their repetitive nature, WVBTG reserves the right to charge administrative costs or refuse to comply with the request."
+    ],
+    "pointB": "b. Personal data breaches",
+    "pointBfirstParagraph": "In the event of a data breach and to the extent that such breach is likely to pose a high risk to the User's rights and freedoms, WVBTG undertakes to communicate the Personal Data breach to the User concerned within 72 hours from upon becoming aware of the incident. ",
+    "pointBfirstParagraphlist": [
+      "If WVBTG has applied appropriate protection measures, both technical and organizational, and these measures have been applied to the Personal Data affected by the Personal Data breach, especially measures that make the Personal Data incomprehensible to any person not authorized to access such data, such as encryption;",
+      "If WVBTG has taken subsequent measures to ensure that the high risk to the User's rights and freedoms is no longer likely to materialize; ",
+      "If communication to the User involves a disproportionate effort for WVBTG. "
+    ]
+  },
+  "fifthPoint": {
+    "title": "5. Changes to the Privacy Policy",
+    "firstParagraph": "WVBTG reserves the right to change this Privacy Policy at any time. "
+  },
+  "sixthPoint": {
+    "title": "6. Applicable law and forum",
+    "paragraphs": [
+      "The Privacy Policy, as well as the collection, processing or transmission of User Data, are governed by the provisions of Regulation (EU) 2016/679, of the European Parliament and of the Council, of April 27, 2016 and by applicable legislation and regulations in Portugal.",
+      "Any disputes arising from the validity, interpretation or execution of the Privacy Policy, or which are related to the collection, processing or transmission of User Data, must be submitted exclusively to the jurisdiction of the judicial courts of the district of Lisbon, without prejudice to legal regulations applicable imperatives."
+    ]
+  }
 }

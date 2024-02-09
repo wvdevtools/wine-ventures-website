@@ -3,21 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import Trans from 'next-translate/Trans';
 import { arimo } from '@/utils/fonts';
-/* import Link from 'next/link'; */
-//Sanity
-/* import { groq } from 'next-sanity';
-import { client } from '../lib/sanity.client';
-import imageUrlBuilder from '@sanity/image-url';
-import { PortableText } from '@portabletext/react'; */
 
-const SobreNos = (/* { aboutUsPageData } */) => {
+const SobreNos = () => {
   const { t } = useTranslation('sobreNos');
-
-  /*   const builder = imageUrlBuilder(client);
-
-  function urlFor(source) {
-    return builder.image(source);
-  } */
 
   return (
     <section className={styles.main}>
@@ -31,25 +19,21 @@ const SobreNos = (/* { aboutUsPageData } */) => {
               src="/images/home_main_wine_img.jpg"
               alt="Pouring wine"
               fill={true}
+              sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
               className={styles.image}
+              priority={true}
             />
           </div>
           <h2 className={`${arimo.className} ${styles.title}`}>
             <Trans
               i18nKey="sobreNos:firstArticleTitle"
               components={{
-                b: <z className={styles.bold} />,
+                b: <b className={styles.bold} />,
               }}
             />
           </h2>
 
-          <p className={styles.text}>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-            nunc eget odio ultricies aliquet. Sed euismod, nisl quis consectetur
-            ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis
-            nunc. Sed euismod, nisl quis consectetur ultricies, nisl nibh
-            aliquam nunc, quis ultrices libero nisl quis.
-          </p>
+          <p className={styles.text}>{t('firstArticleText')}</p>
         </article>
         <article className={styles.articleContainer}>
           <div className={styles.imageContainer}>
@@ -57,6 +41,7 @@ const SobreNos = (/* { aboutUsPageData } */) => {
               src="/images/wine_cheers.jpg"
               alt="Cheers"
               fill={true}
+              sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
               className={styles.image}
             />
           </div>
@@ -64,18 +49,12 @@ const SobreNos = (/* { aboutUsPageData } */) => {
             <Trans
               i18nKey="sobreNos:secondArticleTitle"
               components={{
-                b: <z className={styles.bold} />,
+                b: <b className={styles.bold} />,
               }}
             />
           </h2>
 
-          <p className={styles.text}>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-            nunc eget odio ultricies aliquet. Sed euismod, nisl quis consectetur
-            ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis
-            nunc. Sed euismod, nisl quis consectetur ultricies, nisl nibh
-            aliquam nunc, quis ultrices libero nisl quis.
-          </p>
+          <p className={styles.text}>{t('secondArticleText')}</p>
         </article>
       </section>
       <section className={styles.secondSectionContainer}>
@@ -83,8 +62,8 @@ const SobreNos = (/* { aboutUsPageData } */) => {
           <h2 className={`${arimo.className} ${styles.title}`}>
             {t('leadershipTitle')}
           </h2>
-          <h3 className={styles.subTitle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h3 className={`${styles.text} ${styles.centeredText}`}>
+            {t('leadershipText')}
           </h3>
         </div>
         <div className={styles.profilesContainer}>
@@ -100,11 +79,7 @@ const SobreNos = (/* { aboutUsPageData } */) => {
                 Francisco de Sousa Ferreira
               </figcaption>
             </figure>
-            <p className={styles.profileText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-              nunc eget odio ultricies aliquet. Sed euismod, nisl quis
-              consectetur ultricies.
-            </p>
+            <p className={styles.profileText}>{t('FSFText')}</p>
           </article>
           <article className={styles.profileColumn}>
             <figure className={styles.figure}>
@@ -118,40 +93,12 @@ const SobreNos = (/* { aboutUsPageData } */) => {
                 Maria Godinho
               </figcaption>
             </figure>
-            <p className={styles.profileText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-              nunc eget odio ultricies aliquet. Sed euismod, nisl quis
-              consectetur ultricies.
-            </p>
+            <p className={styles.profileText}>{t('MGText')}</p>
           </article>
         </div>
       </section>
     </section>
   );
 };
-
-/* export const getStaticProps = async ({ locale }) => {
-  console.log('locale: ', locale);
-  const aboutUsPageQuery = groq`*[_type == "aboutUsPage" && __i18n_lang == "${locale}"]{
-    _id,
-    title,
-    missionAndVision,
-    leadership,
-    leadershipImageOne,
-    leadershipImageTwo,
-    sustainability
-  }`;
-
-  console.log('aboutUsPageQuery: ', aboutUsPageQuery);
-
-  const aboutUsPageData = await client.fetch(aboutUsPageQuery);
-
-  return {
-    props: {
-      aboutUsPageData,
-    },
-    revalidate: 10,
-  };
-}; */
 
 export default SobreNos;

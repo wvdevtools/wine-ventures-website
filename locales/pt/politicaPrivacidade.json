@@ -1,4 +1,104 @@
 {
   "backLink": "Voltar",
-  "title": "Política de Privacidade"
+  "title": "Política de Privacidade",
+  "firstParagraph": "No âmbito da disponibilização do website alojado em http://wineventures.eu/ (“Site”) e dos serviços e comunicações ali disponibilizados, a Wine Ventures by The Glass, S.A. (“WVBTG”), sob o número de pessoa coletiva 510929435, com sede na Rua Júlio da Silva Pinto, n.º 9, em Lisboa, poderá requisitar ao Utilizador que disponibilize dados pessoais, isto é, informações fornecidas pelo Utilizador que permitam à WVBTG identificÁ-lo e/ou contactá-lo (“Dados Pessoais”).",
+  "firstPoint": {
+    "title": "1. Recolha e tratamento de dados do utilizador",
+    "firstParagraph": "No âmbito da disponibilização do website alojado em http://wineventures.eu/ (“Site”) e dos serviços e comunicações ali disponibilizados, a Wine Ventures by The Glass, S.A. (“WVBTG”), sob o número de pessoa coletiva 510929435, com sede na Rua Júlio da Silva Pinto, n.º 9, em Lisboa, poderá requisitar ao Utilizador que disponibilize dados pessoais, isto é, informações fornecidas pelo Utilizador que permitam à WVBTG identificÁ-lo e/ou contactá-lo (“Dados Pessoais”).",
+    "secondParagraph": "Por regra, os Dados Pessoais são requisitados quando o Utilizador:",
+    "secondParagraphlist": [
+      "se regista no Site;",
+      "solicita um contacto por parte da WVBTG através do formulário disponível no Site;"
+    ],
+    "thirdParagraphs": [
+      "Os Dados Pessoais recolhidos e tratados consistem em informação relativa ao nome, endereço de correio eletrónico e outra informação pessoal fornecida pelo Utilizador.",
+      "Aquando da recolha direta dos Dados Pessoais, a WVBTG presta ao Utilizador informações detalhadas acerca da natureza dos dados recolhidos e acerca da finalidade e do tratamento que será realizado relativamente aos Dados Pessoais, e, bem assim, as informações mencionadas na cláusula 7, através da consulta da Política de Privacidade disponibilizada no Site.",
+      "A WVBTG recolhe e trata ainda informação sobre o seu hardware e software, assim como informação sobre as páginas visitadas pelo Utilizador dentro do Site. Esta informação pode incluir: o seu tipo de browser, o nome de domínio, os tempos de acesso e as hiperligações através das quais o Utilizador acedeu ao Site (“Informação de Usabilidade”). Esta informação apenas poderá ser utilizada para melhorar a qualidade da sua visita ao nosso Site.",
+      "A Informação de Usabilidade e os Dados Pessoais são designados na presente Política de Privacidade por “Dados do Utilizador”."
+    ]
+  },
+  "secondPoint": {
+    "title": "2. Entidades subcontratadas",
+    "paragraphs": [
+      "No âmbito do tratamento dos Dados do Utilizador, a WVBTG poderá recorrer a entidades terceiras, por si subcontratadas, para, que em nome da WVBTG, e de acordo com as instruções dadas por esta, procederem ao tratamento dos Dados do Utilizador, em estrito cumprimento com o disposto na lei e na presente Política de Privacidade.",
+      "Estas entidades subcontratadas não poderão transmitir os Dados do Utilizador a outras entidades sem que a WVBTG tenha dado, previamente e por escrito, autorização para tal, estando também impedidas de contratar outras entidades sem autorização prévia da WVBTG.",
+      "A WVBTG assume o compromisso de subcontratar apenas entidades que apresentem garantias suficientes de execução das medidas técnicas e organizativas adequadas, de forma a assegurar a defesa dos direitos do Utilizador. Todas as entidades subcontratadas pela WVBTG ficam vinculadas a esta última através de um contrato escrito no qual são regulados, nomeadamente, o objeto e a duração do tratamento, a natureza e finalidade do tratamento, o tipo de Dados Pessoais, as categorias dos titulares dos dados e os direitos e obrigações das partes."
+    ]
+  },
+  "thirdPoint": {
+    "title": "3. Princípios gerais aplicáveis ao tratamento de dados do utilizador",
+    "firstParagraph": "Em termos de princípios gerais relativos ao tratamento de Dados Pessoais, a WVBTG compromete-se a assegurar que os Dados do Utilizador por si tratados são:",
+    "firstParagraphlist": [
+      "Objeto de um tratamento lícito, leal e transparente em relação ao Utilizador;",
+      "Recolhidos para finalidades determinadas, explícitas e legítimas, não sendo tratados posteriormente de uma forma incompatível com essas finalidades;",
+      "Adequados, pertinentes e limitados ao que é necessário relativamente às finalidades para as quais são tratados;",
+      "Exatos e atualizados sempre que necessário, sendo adotadas todas as medidas adequadas para que os dados inexatos, tendo em conta as finalidades para que são tratados, sejam apagados ou retificados sem demora;",
+      "Conservados de uma forma que permite a identificação do Utilizador apenas durante o período necessário para as finalidades para as quais os dados são tratados;",
+      "Tratados de uma forma que garante a sua segurança, incluindo a proteção contra o seu tratamento não autorizado ou ilícito e contra a sua perda, destruição ou danificação acidental, sendo adotadas as medidas técnicas ou organizativas adequadas."
+    ],
+    "thirdParagraph": "Os tratamentos de dados efetuados pela WVBTG são lícitos quando se verifique pelo menos uma das seguintes situações:",
+    "thirdParagraphlist": [
+      "O Utilizador tiver dado o seu consentimento explícito para o tratamento dos Dados do Utilizador para uma ou mais finalidades específicas;",
+      "O tratamento for necessário para a execução de um contrato no qual o Utilizador é parte, ou para diligências pré-contratuais a pedido do Utilizador;",
+      "O tratamento for necessário para o cumprimento de uma obrigação jurídica a que a WVBTG esteja sujeita;",
+      "O tratamento for necessário para a defesa de interesses vitais do Utilizador ou de outra pessoa singular;",
+      "O tratamento for necessário para efeito dos interesses legítimos prosseguidos pela WVBTG ou por terceiros (exceto se prevalecerem os interesses ou direitos e liberdades fundamentais do Utilizador que exijam a proteção dos Dados Pessoais)."
+    ],
+    "fourthParagraphs": [
+      "A WVBTG compromete-se a assegurar que o tratamento dos Dados do Utilizador apenas é feito nas condições acima elencadas e com respeito pelos princípios acima mencionados.",
+      "Quando o tratamento dos Dados do Utilizador for realizado pela WVBTG com base no consentimento do Utilizador, este tem o direito de retirar o seu consentimento a qualquer momento. A retirada do consentimento, todavia, não compromete a licitude do tratamento efetuado pela WVBTG com base no consentimento previamente dado pelo Utilizador.",
+      "O período de tempo durante o qual os dados são armazenados e conservados varia de acordo com a finalidade para a qual a informação é tratada.",
+      "Os dados serão armazenados e conservados apenas pelo período mínimo necessário para as finalidades que motivaram a sua recolha ou o seu posterior tratamento, findo o qual os mesmos serão eliminados."
+    ],
+    "pointA": "a. Utilização e finalidades do tratamento dos dados do utilizador",
+    "pointAfirsParagraph": "Em termos gerais, a WVBTG utiliza os Dados do Utilizador com as seguintes finalidades:",
+    "pointAfirstParagraphlist": [
+      "Comercializar os produtos e prestar os serviços WVBTG;",
+      "Informar o Utilizador de novos produtos e serviços, através de qualquer meio de comunicação, sendo um interesse legítimo da WVBTG assim o fazer, sem prejuízo do direito de o titular dos dados se opor a este tratamento em qualquer momento;",
+      "Permitir o acesso a áreas restritas do Site, de acordo com termos previamente estabelecidos;",
+      "Prestação de Serviços, e outros serviços, tais como newsletters, inquéritos de opinião, ou outras informações ou produtos requisitados ou consentidos pelo Utilizador;"
+    ],
+    "pointAsecondParagraphs": [
+      "A WVBTG poderá ainda contactar os representantes de clientes empresariais, para efeitos de apresentação de produtos e serviços WVBTG, traduzindo-se num interesse legítimo da WVBTG assim o fazer, sem prejuízo do direito de o titular dos dados se opor a este tratamento em qualquer momento.",
+      "Nos termos legais aplicáveis, a WVBTG poderá transmitir ou comunicar os Dados do Utilizador a outras entidades no caso de essa transmissão ou comunicação ser necessária para a execução do contrato estabelecido entre o Utilizador e a WVBTG, ou para diligências pré-contratuais a pedido do Utilizador, no caso de ser necessária para o cumprimento de uma obrigação jurídica a que a WVBTG esteja sujeita ou no caso de ser necessária para efeito da prossecução de interesses legítimos da WVBTG ou de terceiro."
+    ],
+    "pointB": "b. Medidas técnicas, organativas e de segurança implementadas",
+    "pointBparagraphs": [
+      "Para garantir a segurança dos Dados do Utilizador e a máxima confidencialidade, a WVBTG trata a informação que lhe seja fornecida de forma absolutamente confidencial, de acordo com as suas políticas e procedimentos internos de segurança e confidencialidade, os quais são atualizados periodicamente consoante as necessidades, bem como de acordo com os termos e condições legalmente previstos.",
+      "Em função da natureza, do âmbito, do contexto e das finalidades do tratamento dos dados, bem como dos riscos decorrentes do tratamento para os direitos e liberdades do Utilizador, a WVBTG compromete-se a aplicar, tanto no momento de definição dos meios de tratamento como no momento do próprio tratamento, as medidas técnicas e organizativas necessárias e adequadas à proteção dos Dados do Utilizador e ao cumprimento dos requisitos legais."
+    ],
+    "pointC": "c. Utilização de cookies",
+    "pointCparagraphs": [
+      "Os cookies são pequenos ficheiros de informação que são enviados para o computador ou telemóvel quando visita um website. Os cookies são enviados de volta ao site de origem em cada visita subsequente ou para outro site que reconheça esse cookie. Os cookies são úteis porque permitem que um site reconheça o dispositivo do utilizador, permitindo-lhe navegar eficientemente pelas páginas, recordando também as suas preferências e melhorando em geral a experiência do utilizador. Outros cookies são usados para recordar quando um utilizador regressa a um site e têm um período de duração maior.",
+      "A capacidade de ativar, desativar ou eliminar cookies também se pode efetuar no seu browser. Para isso, siga as instruções no seu browser (geralmente localizadas nas opções “Ajuda”, “Ferramentas” ou “Editar”). Desativar um cookie ou uma categoria de cookies não apaga o cookie do seu browser, para tal necessita efetuar o apagamento manualmente.",
+      "Ao bloquear ou eliminar cookies é possível que não consiga disfrutar ao máximo das funcionalidades do website."
+    ]
+  },
+  "fourthPoint": {
+    "title": "4. Direitos dos utilizadores (titulares dos dados)",
+    "pointA": "a. Procedimentos com vista ao exercício dos direitos pelo utilizador",
+    "pointAparagraphs": [
+      "O direito de acesso, o direito de retificação, o direito de apagamento, o direito à limitação, o direito de portabilidade e o direito à oposição podem ser exercidos pelo Utilizador mediante contacto com a WVBTG, através do e-mail info@wineventures.eu.",
+      "A WVBTG dará resposta por escrito (incluindo por meios eletrónicos) ao pedido do Utilizador no prazo máximo de um mês a contar da receção do pedido, salvo em casos de especial complexidade, em que esse prazo pode ser prorrogado até dois meses.",
+      "Se os pedidos apresentados pelo Utilizador forem manifestamente infundados ou excessivos, nomeadamente devido ao seu carácter repetitivo, a WVBTG reserva-se o direito de cobrar custos administrativos ou recusar-se a dar seguimento ao pedido."
+    ],
+    "pointB": "b. Violações de dados pessoais",
+    "pointBfirstParagraph": "Em caso de violação de dados e na medida em que tal violação seja suscetível de implicar um elevado risco para os direitos e liberdades do Utilizador, a WVBTG compromete-se a comunicar a violação de Dados Pessoais ao Utilizador em causa no prazo de 72 horas a contar do conhecimento do incidente. Nos termos legais, a comunicação ao Utilizador não é exigida nos seguintes casos:",
+    "pointBfirstParagraphlist": [
+      "Caso a WVBTG tenha aplicado medidas de proteção adequadas, tanto técnicas como organizativas, e essas medidas tenham sido aplicadas aos Dados Pessoais afetados pela violação de Dados Pessoais, especialmente medidas que tornem os Dados Pessoais incompreensíveis para qualquer pessoa não autorizada a aceder a esses dados, tais como a cifragem;",
+      "Caso a WVBTG tenha tomado medidas subsequentes que assegurem que o elevado risco para os direitos e liberdades do Utilizador já não é suscetível de se concretizar; ou",
+      "Caso a comunicação ao Utilizador implique um esforço desproporcionado para a WVBTG. Nesse caso, a WVBTG fará uma comunicação pública ou tomará uma medida semelhante através da qual o Utilizador será informado."
+    ]
+  },
+  "fifthPoint": {
+    "title": "5. Alterações à Política de Privacidade",
+    "firstParagraph": "A WVBTG reserva-se o direito de alterar a presente Política de Privacidade a todo o tempo. Em caso de modificação da Política de Privacidade, a data da última alteração é também atualizada. Caso a alteração seja substancial, será colocado um aviso no Site."
+  },
+  "sixthPoint": {
+    "title": "6. Lei e foro aplicáveis",
+    "paragraphs": [
+      "A Política de Privacidade, bem como a recolha, tratamento ou transmissão de Dados do Utilizador, são regidos pelo disposto no Regulamento (UE) 2016/679, do Parlamento Europeu e do Conselho, de 27 de abril de 2016 e pela legislação e regulamentação aplicáveis em Portugal.",
+      "Quaisquer litígios decorrentes da validade, interpretação ou execução da Política de Privacidade, ou que estejam relacionados com a recolha, tratamento ou transmissão de Dados do Utilizador, devem ser submetidos em exclusivo à jurisdição dos tribunais judiciais da comarca de Lisboa, sem prejuízo das normas legais imperativas aplicáveis."
+    ]
+  }
 }

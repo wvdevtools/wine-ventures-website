@@ -50,6 +50,8 @@ const Article = ({ article }) => {
                     alt={article.title}
                     fill
                     className={styles.image}
+                    sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+                    priority={true}
                   />
                 </div>
                 <div className={styles.articleBodyContainer}>

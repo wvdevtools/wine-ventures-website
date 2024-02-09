@@ -1,4 +1,66 @@
 {
-  "backLink": "Voltar",
-  "title": "Terms and Conditions"
+  "backLink": "To go back",
+  "title": "Terms and conditions",
+  "firstPoint": {
+    "title": "1. Acceptance and changes to the Terms and Conditions of use",
+    "paragraphs": [
+      "By browsing this Internet Site (hereinafter “Site”), the User agrees to be bound by the Terms and Conditions of Use described below.",
+      "Wine Ventures by The Glass, S.A. maintains this website for individual use, in countries and other territories where the consumption of alcoholic beverages is legal, for people who are legally permitted to consume alcoholic beverages.",
+      "By using our Website, the User is accepting these Terms and Conditions of Use.",
+      "Wine Ventures by The Glass, S.A. reserves the right to change these Terms and Conditions of Use at any time, limiting itself to posting the changes online on the Website, with the User being solely responsible for checking and complying with them when its use. "
+    ]
+  },
+  "secondPoint": {
+    "title": "2. Use of the Website",
+    "firstParagraph": "The User enjoys complete freedom to use the Website as long as they comply with these Terms and Conditions of Use, particularly with regard to copyright and industrial property rights. ",
+    "firstParagraphList": [
+      "Activities that violate the rights of Wine Ventures by The Glass, S.A. or third parties;",
+      "Use of a false identity or concealment of identity;",
+      "Illegal activities, such as the use of information intended to cause physical harm to other individuals;",
+      "Violate the rules for using this Website;",
+      "Reproduce content that is offensive, defamatory or likely to violate the rights and privacy of third parties;",
+      "Compromise the security of the Website;",
+      "Install or attempt to install a virus; "
+    ],
+    "secondParagraph": "The User may print or have third parties print any material downloadable to their computer contained on this website, under the following conditions:",
+    "secondParagraphList": [
+      "the material is solely for personal and non-commercial use;",
+      "no copyright or other indication of ownership is removed from the material;",
+      "the material is not altered in any way."
+    ],
+    "thirdParagraph": "Any message and/or other content that the User transmits to this Site, whether via email, discussion group message, sending a file and/or in any other way, will be considered non-confidential and non-reserved."
+  },
+  "thirdPoint": {
+    "title": "3. Copyright, Trademarks and Other Proprietary Rights",
+    "paragraphs": [
+      "The content of this Site, including, but not limited to, brands, designs, logos, text, images, audio and video materials and the appearance, organization, layout of the Site or software code, is the exclusive property of Wine Ventures by The Glass , S.A., unless otherwise indicated. ",
+      "If notified, Wine Ventures by The Glass, S.A. may investigate whether any content transmitted to this site is violating the Terms and Conditions of Use and may determine whether to have such content removed from this Site. "
+    ]
+  },
+  "fourthPoint": {
+    "title": "4. Hyperlinks",
+    "paragraphs": [
+      "The Site may contain links to other sites on the Internet that are owned and operated by third parties. "
+    ]
+  },
+  "fifthPoint": {
+    "title": "5. Privacy",
+    "firstParagraph": "For more information, please consult our Privacy and Cookies Policy, accessible on this Site."
+  },
+  "sixthPoint": {
+    "title": "6. Limitation of Liability",
+    "firstParagraph": "To the maximum extent permitted by applicable legislation, Wine Ventures by The Glass, S.A., including, but not limited to, all of its legal guardians, Administrators, employees and/or agents, will not be liable to the User of the website, for any possible damage, loss and/or injury (including, but not limited to, direct, indirect, incidental, special, consequential and punitive damages, lost profits and damages resulting from lost information and/or interruption of website activity) arising or relating to the use and/or inability to use this website and its contents, whether based on warranty, contract, tort or any other legal basis, regardless of whether Wine Ventures by The Glass, S.A. has been negligent and/or not have been notified of the existence of such damage."
+  },
+  "seventhPoint": {
+    "title": "7. Compensation",
+    "firstParagraph": "The User of this Site agrees to defend, indemnify and hold harmless Wine Ventures by The Glass, S.A. from and against any claim or demand presented by any third party, and from all associated obligations, damages, costs and expenses (including, but not limited to, that this constitutes limitation, reasonable attorneys' fees) arising from and/or relating to your use of this Site, content that the User transmits to this site, the User's violation of any third party rights and/or the User's violation of the Terms and Conditions of Use."
+  },
+  "eighthPoint": {
+    "title": "8. Jurisdiction",
+    "firstParagraph": "These Terms and Conditions of Use will be governed and interpreted in accordance with Portuguese Law. "
+  },
+  "ninethPoint": {
+    "title": "9. General Provisions",
+    "firstParagraph": "If any provision of the Terms and Conditions of Use is found to be invalid by any court of competent jurisdiction, the invalidity of any such provision shall not affect the validity of the remaining provisions of the Terms and Conditions of Use, which shall remain in full force and effect."
+  }
 }

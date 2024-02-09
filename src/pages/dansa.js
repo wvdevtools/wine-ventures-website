@@ -22,75 +22,48 @@ const CrimeOfTheCentury = () => {
         </div>
 
         <div className={styles.firstSectionContainer}>
-          <article className={styles.articleContainer}>
+          <article className={`${styles.articleContainer} ${styles.dansaGrid}`}>
             <div className={styles.imageContainer}>
               <Image
                 src="/images/dansa_sangria.jpg"
                 alt="Dansa sangria"
                 fill={true}
+                priority={true}
                 className={styles.image}
+                sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
               />
             </div>
             <h2 className={styles.title}>
               <Trans
                 i18nKey="dansa:articleTitle"
                 components={{
-                  b: <z className={styles.bold} />,
+                  b: <span className={styles.bold} />,
                 }}
               />
             </h2>
-
-            <p className={styles.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-              nunc eget odio ultricies aliquet. Sed euismod, nisl quis
-              consectetur ultricies, nisl nibh aliquam nunc, quis ultrices
-              libero nisl quis nunc. Sed euismod, nisl quis consectetur
-              ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis.
-            </p>
+            <div className={styles.textContainer}>
+              <p className={styles.text}>{t('brandFirstParagraph')}</p>
+              <p className={styles.text}>{t('brandSecondParagraph')}</p>
+            </div>
             <Link href="/contactos" className={styles.button}>
               {t('knowMore')}
             </Link>
           </article>
         </div>
-        {/* <div className={styles.bottomImageContainer}>
+        <div className={styles.bottomImageContainer}>
           <Image
-            src="/images/dansa_bottom.jpg"
-            alt="Dansa sangria"
-            fill={true}
+            src="/images/dansa_sangria_banner.jpg"
+            alt="Crime of the Century, tap wine."
+            width={2979} // The original width of the image
+            height={1986} // The original height of the image
+            className={styles.bottomImage}
+            sizes="100vw"
+            loading="lazy"
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );
 };
 
-/* export const getStaticProps = async ({ locale }) => {
-  const cotcQuery = groq`*[_type == "cotcBrand" && __i18n_lang == "${locale}"]{
-    _id,
-    title,
-    cotcBrandText
-  }`;
-
-  const cotcData = await client.fetch(cotcQuery);
-
-  return {
-    props: {
-      cotcData,
-    },
-    revalidate: 10,
-  };
-}; */
-
 export default CrimeOfTheCentury;
-
-{
-  /* <PortableText value={cotcData[0].cotcBrandText} />
-            <Link
-              href="https://crimeofthecentury.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.button}
-            >
-              Website
-            </Link> */
-}

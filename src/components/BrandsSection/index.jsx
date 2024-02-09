@@ -15,41 +15,41 @@ export const BrandsSection = ({ t }) => {
           </h1>
         </Fade>
 
-        <h2 className={`${arimo.className} ${styles.title}`} id="marcas">
-          {t('brands.title')}
-        </h2>
-
-        <Fade duration={2000}>
-          <p className={styles.subtitle}>{t('brands.subtitle')}</p>
-
-          <div className={styles.brands}>
-            <Link
-              href="/crime-of-the-century"
-              className={styles.imgLinkContainer}
-            >
-              <Image
-                src="/images/cotc_brand.png"
-                alt="Crime Of The Century"
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-                fill
-                className={styles.img}
-              />
-            </Link>
-            <Link href="/dansa" className={styles.imgLinkContainer}>
-              <Image
-                src="/images/dansa_brand.png"
-                alt="Dansa"
-                fill
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-                className={styles.img}
-              />
-            </Link>
-          </div>
+        <Fade>
+          <h2 className={`${arimo.className} ${styles.title}`} id="marcas">
+            {t('brands.title')}
+          </h2>
         </Fade>
+        <Fade>
+          <p className={styles.subtitle}>{t('brands.subtitle')}</p>
+        </Fade>
+        <div className={styles.brands}>
+          <Link
+            href="/crime-of-the-century"
+            className={styles.imgLinkContainer}
+          >
+            <Image
+              src="/images/cotc_brand.png"
+              alt="Crime Of The Century"
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              fill
+              className={styles.img}
+            />
+          </Link>
+          <Link href="/dansa" className={styles.imgLinkContainer}>
+            <Image
+              src="/images/dansa_brand.png"
+              alt="Dansa"
+              fill
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              className={styles.img}
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );

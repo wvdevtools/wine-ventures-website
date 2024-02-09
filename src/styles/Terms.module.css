@@ -13,34 +13,34 @@
   padding: 2rem 1.5rem 5rem;
 }
 
-.backLinkContainer {
-  align-self: flex-start;
-  border-bottom: var(--wine-color) 2px solid;
-}
-.backLink {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--wine-color);
-  text-decoration: none;
-}
-
-.titleWrapper {
-  width: fit-content;
-  border-left: 5px solid var(--wine-color);
-  padding-left: 10px;
-}
-
-.title {
+.pageTitle {
   font-size: 2rem;
   font-weight: 700;
   line-height: 35px;
   color: #000;
 }
 
+.secondTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 35px;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.thirdTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 35px;
+  color: #000;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
 .contentContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .contentContainer ul {
@@ -49,4 +49,12 @@
 
 .contentContainer ol {
   padding-left: 2rem;
+}
+
+.contentContainer p,
+.contentContainer li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: var(--black);
 }

@@ -1,11 +1,12 @@
 {
   "brands": {
     "title": "Brands",
-    "subtitle": "Wine Ventures portfolio of wines demonstrates our success and commitment to our vision of building strong wine brands that deliver inbeatable value to our customers."
+    "subtitle": "Whether you're a seasoned wine enthusiast or just beginning to explore the world of wine, we have a wine brand that's perfect for you. Join us on a journey of discovery and explore our wine portfolio."
   },
   "aboutUs": {
     "title": "About",
-    "knowMore": "Know More"
+    "knowMore": "Know More",
+    "text": "At Wine Ventures, our passion for wine flows straight from the tap to your glass. We're not just about wine; we're dedicated to revolutionizing the way you experience it. Our journey takes us Outside the Bottle, where innovation meets tradition, creating a new era of wine appreciation in a convenient and eco-friendly way."
   },
   "media": {
     "title": "Media",

@@ -19,6 +19,7 @@ export const MediaCard = ({ image, title, summary, slug, t }) => {
           alt={title}
           fill
           className={styles.image}
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
 

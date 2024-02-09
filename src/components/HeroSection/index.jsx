@@ -12,6 +12,7 @@ export const HeroSection = () => {
           src="/images/wine-ventures-logo-color.svg"
           alt="Wine Ventures Logo"
           fill
+          sizes="(max-width: 480px) 100px, 500px"
         />
       </div>
 

@@ -1,12 +1,12 @@
-html {
-  scroll-behavior: smooth !important;
-}
-
 :root {
   --light-wine-color: #884867;
   --wine-color: #611a41;
   --white: #ffffff;
   --black: #000000;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 * {
@@ -30,4 +30,13 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.not-found-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }

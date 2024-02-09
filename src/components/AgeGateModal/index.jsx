@@ -56,6 +56,7 @@ export const AgeGateModal = () => {
                 alt="Wine Ventures Logo"
                 width={250}
                 height={92}
+                priority={true}
               />
               {/* <h1>{t('ageGate.title')}</h1> */}
               <p className={styles.text}>{t('ageGate.text')}</p>

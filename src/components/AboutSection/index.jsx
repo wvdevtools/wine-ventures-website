@@ -9,28 +9,24 @@ const AboutSection = ({ t }) => {
     <section className={styles.section} id="sobre-nos">
       <div className={styles.sectionContainer}>
         <div className={styles.imageContainer}>
-          <Fade>
-            <Image
-              src="/images/home_main_wine_img.jpg"
-              alt="Pouring wine"
-              fill={true}
-              className={styles.image}
-            />
-          </Fade>
+          <Image
+            src="/images/home_main_wine_img.jpg"
+            alt="Pouring wine"
+            fill={true}
+            priority={true}
+            className={styles.image}
+            sizes="(max-width: 480px) 100vw, 50vw"
+          />
         </div>
-        <h2 className={`${arimo.className} ${styles.title}`}>
-          {t('aboutUs.title')}
-        </h2>
         <Fade>
-          <p className={styles.text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
-            nunc eget odio ultricies aliquet. Sed euismod, nisl quis consectetur
-            ultricies, nisl nibh aliquam nunc, quis ultrices libero nisl quis
-            nunc. Sed euismod, nisl quis consectetur ultricies, nisl nibh
-            aliquam nunc, quis ultrices libero nisl quis.
-          </p>
+          <h2 className={`${arimo.className} ${styles.title}`}>
+            {t('aboutUs.title')}
+          </h2>
         </Fade>
-        <Link href="/sobre-nos" className={styles.button}>
+        <Fade>
+          <p className={styles.text}>{t('aboutUs.text')}</p>
+        </Fade>
+        <Link href="/sobre" className={styles.button}>
           {t('aboutUs.knowMore')}
         </Link>
       </div>

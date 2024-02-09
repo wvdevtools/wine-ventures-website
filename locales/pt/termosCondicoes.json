@@ -1,4 +1,66 @@
 {
   "backLink": "Voltar",
-  "title": "Termos e Condições"
+  "title": "Termos e Condições",
+  "firstPoint": {
+    "title": "1. Aceitação e alterações aos Termos e Condições de utilização",
+    "paragraphs": [
+      "Ao navegar neste Site de Internet (doravante “Site”), o Utilizador concorda em estar vinculado pelos Termos e Condições de Utilização abaixo descritos.",
+      "A Wine Ventures by The Glass, S.A. mantém este site para uso individual, em países e outros territórios onde o consumo de bebidas alcoólicas seja legal, para pessoas que tenham permissão legal de consumir bebidas alcoólicas.",
+      "Ao utilizar o nosso Site, o Utilizador está a aceitar os presentes Termos e Condições de Utilização.",
+      "A Wine Ventures by The Glass, S.A. reserva-se o direito de alterar estes Termos e Condições de Utilização a qualquer momento, limitando-se a colocar as alterações online no Site, sendo da exclusiva responsabilidade do Utilizador a verificação e cumprimento dos mesmos aquando da sua utilização. As alterações não serão de aplicação retroativa. As alterações relativas a novas funcionalidades de um serviço ou as alterações efetuadas por motivos legais entrarão imediatamente em vigor. Caso o Utilizador não aceite os Termos e Condições de Utilização modificados do Site, deverá deixar de o utilizar."
+    ]
+  },
+  "secondPoint": {
+    "title": "2. Utilização do Website",
+    "firstParagraph": "O Utilizador goza de inteira liberdade de utilização do Site desde que respeite os presentes Termos e Condições de Utilização, nomeadamente, no que respeita aos direitos de autor e de propriedade industrial. Os Utilizadores são exclusivamente responsáveis pela utilização que fizerem dos conteúdos constantes do Site. Não poderão ser prosseguidas as seguintes atividades:",
+    "firstParagraphList": [
+      "Atividades que atentem contra os direitos da Wine Ventures by The Glass, S.A. ou de terceiros;",
+      "Utilização de uma identidade falsa ou a ocultação da identidade;",
+      "Atividade ilegais, tais como o uso de informação de no sendo de ofensas físicas a outros indivíduos;",
+      "Violar as normas de utilização do presente Site;",
+      "Reproduzir conteúdos ofensivos, difamatórios ou suscetíveis de violar direitos e a privacidade de terceiros;",
+      "Pôr em causa a segurança do Website;",
+      "Instalar ou tentar instalar um vírus; 8. Aceder aos mesmos através de outros métodos que não a interface e as instruções que fornecemos."
+    ],
+    "secondParagraph": "O Utilizador poderá imprimir ou fazer com que terceiros imprimam qualquer material transferível para seu computador contido neste site, nas seguintes condições:",
+    "secondParagraphList": [
+      "o material seja unicamente para uso pessoal e não-comercial;",
+      "nenhuma indicação de direitos de autor ou outra indicação de propriedade seja removida do material;",
+      "o material não seja alterado seja de que forma for."
+    ],
+    "thirdParagraph": "Qualquer mensagem e/ou outro conteúdo que o Utilizador transmita para este Site, seja através de correio eletrónico, mensagem para grupo de discussão, envio de arquivo e/ou de qualquer outro modo, será considerada como não confidencial e não reservada."
+  },
+  "thirdPoint": {
+    "title": "3. Direitos de Autor, Marcas e Outros Direitos de Propriedade",
+    "paragraphs": [
+      "O conteúdo deste Site, incluindo, mas sem limitar, marcas, desenhos, logótipos, texto, imagens, materiais áudios e vídeo e ainda o aspeto, organização, layout do Site ou código de software, é de propriedade exclusiva da Wine Ventures by The Glass, S.A., a menos que seja indicado diversamente. Não é permitido ao Utilizador exibir, reproduzir, distribuir, modificar, transmi6r e/ou de outro modo usar o material de propriedade da Wine Ventures by The Glass, S.A. seja de que forma for para qualquer finalidade pública e/ou comercial, sem o prévio e expresso consentimento escrito da Wine Ventures by The Glass, S.A.",
+      "Caso seja notificada, a Wine Ventures by The Glass, S.A. poderá investigar se qualquer conteúdo transmitido a este site está a violar os Termos e Condições de Utilização e poderá determinar se fará com que tal conteúdo seja removido deste Site. A Wine Ventures by The Glass, S.A. não terá nenhuma obrigação de remover do site o conteúdo transmitido por terceiros a partir deste site e não assume qualquer responsabilidade ou obrigação decorrente e/ou relativa a qualquer conteúdo deste tipo, incluindo, mas sem que isto constitua limitação, qualquer erro, difamação, calúnia, perfídia, omissão, falsidade, obscenidade, pornografia, perigo e/ou inexatidão aí contidos."
+    ]
+  },
+  "fourthPoint": {
+    "title": "4. Hiperligações",
+    "paragraphs": [
+      "O Site pode conter hiperligações para outros sites na Internet que são propriedade e operados por terceiros. A Wine Ventures by The Glass, S.A. não tem qualquer controlo sobre esses sites e não é responsável pelo seu conteúdo. A inclusão de hiperligações para outros sites não implica a aprovação de tais sites por parte da Wine Ventures by The Glass, S.A. O Utilizador reconhece e concorda que a Wine Ventures by The Glass, S.A. não é responsável, direta ou indiretamente, por qualquer dano ou perda causada ou alegadamente causada por ou em conexão com a utilização ou confiança em qualquer conteúdo, bens ou serviços disponíveis em tais sites ou recursos."
+    ]
+  },
+  "fifthPoint": {
+    "title": "5. Privacidade",
+    "firstParagraph": "Para mais informações, por favor consulte a nossa Política de Privacidade e de Cookies, acessível neste Site."
+  },
+  "sixthPoint": {
+    "title": "6. Limitação de Responsabilidade",
+    "firstParagraph": "Na extensão máxima permitida pela legislação aplicável, a Wine Ventures by The Glass, S.A., incluindo, mas sem que isto constitua limitação, todos os seus responsáveis legais, Administradores, empregados e/ou agentes, não serão responsáveis perante o Utilizador do site, por qualquer possível dano, prejuízo e/ou lesão (incluindo, mas sem que isto constitua limitação, danos diretos, indiretos, incidentais, especiais, consequentes e punitivos, lucros cessantes e danos resultantes de informação perdida e/ou interrupção de atividade do site) decorrentes ou rela6vos ao uso e/ou inabilidade para o uso deste site e do seu conteúdo, seja com base em garan6a, contrato, delito ou qualquer outro fundamento legal, independentemente de a Wine Ventures by The Glass, S.A. ter sido negligente e/ou não ter sido notificada da existência de tal dano."
+  },
+  "seventhPoint": {
+    "title": "7. Indemnização",
+    "firstParagraph": "O Utilizador deste Site concorda em defender, indemnizar e isentar de responsabilidade a Wine Ventures by The Glass, S.A. de e contra qualquer reivindicação ou demanda apresentada por quaisquer terceiros, e de todas as obrigações, danos, custos e despesas associados (incluindo, mas sem que isto constitua limitação, honorários advocatórios razoáveis) decorrentes e/ou relativos à sua utilização deste Site, conteúdo que o Utilizador transmita a este site, violação pelo Utilizador de quaisquer direitos de terceiros e/ou a violação por parte do Utilizador dos Termos e Condições de Utilização."
+  },
+  "eighthPoint": {
+    "title": "8. Jurisdição",
+    "firstParagraph": "Os presentes Termos e Condições de Utilização serão regidos e interpretados de acordo com a Lei Portuguesa. O Utilizador presta consentimento, de modo irrevogável, com respeito à atribuição à jurisdição da Comarca de Lisboa para conhecer de qualquer ação decorrente e/ou relacionada com os Termos e Condições de Utilização e/ou com a utilização deste site."
+  },
+  "ninethPoint": {
+    "title": "9. Disposições Gerais",
+    "firstParagraph": "Se qualquer disposição dos Termos e Condições de Utilização for considerada como sendo nula por qualquer tribunal com jurisdição competente, a invalidade de qualquer dessas disposições não afetará a validade das restantes disposições dos Termos e Condições de Utilização, que permanecerão em pleno vigor."
+  }
 }
