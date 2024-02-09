@@ -2,7 +2,7 @@
 
 .heroSection {
   background-image: url('/images/new-hero-img.png');
-  min-height: calc(100dvh - 80px);
+  min-height: calc(100svh - 80px);
   padding: 1.5rem;
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed; */
