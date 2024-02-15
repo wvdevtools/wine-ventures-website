@@ -19,8 +19,8 @@
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 0.5rem 1.5rem 2.5rem;
+  gap: 6rem;
+  padding: 0.5rem 1.5rem 3rem;
 }
 
 .articleContainer {
@@ -71,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding: 2.5rem 1.5rem 5rem;
+  padding: 3rem 1.5rem 6rem;
 }
 
 .subTitle {
@@ -118,7 +118,7 @@
 
 .figcaption {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: bold;
   color: var(--black);
   line-height: 35px;
   text-align: center;

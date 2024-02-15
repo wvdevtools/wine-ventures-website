@@ -24,7 +24,7 @@ const CrimeOfTheCentury = () => {
           <article className={styles.articleContainer}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/ctoc_wine_pouring.jpg"
+                src="/images/cotc_wine_station.jpg"
                 alt="Crime of the century. Pouring wine"
                 fill={true}
                 priority={true}
@@ -56,10 +56,10 @@ const CrimeOfTheCentury = () => {
         </div>
         <div className={styles.bottomImageContainer}>
           <Image
-            src="/images/cotc_wine_station.jpg"
+            src="/images/tap_wine_cotc.jpg"
             alt="Crime of the Century, tap wine."
             width={1250} // The original width of the image
-            height={833} // The original height of the image
+            height={807} // The original height of the image
             className={styles.bottomImage}
             sizes="100vw"
             loading="lazy"

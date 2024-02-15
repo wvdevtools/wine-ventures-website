@@ -10,7 +10,8 @@ export const BrandsSection = ({ t }) => {
       <div className={styles.sectionContainer}>
         <Fade duration={2000}>
           <h1 className={styles.homeTitle}>
-            Thinking Outside of the Bottle <br />
+            Thinking Outside the Bottle
+            <br />
             <span> Driving Innovation in the Wine World</span>
           </h1>
         </Fade>

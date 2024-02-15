@@ -28,7 +28,7 @@ const MediaSection = ({ articlesData, t }) => {
     }
   };
 
-  return (
+  return articles?.length > 0 ? (
     <section className={styles.section} id="media">
       <div className={styles.sectionContainer}>
         <Fade>
@@ -54,6 +54,8 @@ const MediaSection = ({ articlesData, t }) => {
         </div>
       </div>
     </section>
+  ) : (
+    <></>
   );
 };
 

@@ -34,7 +34,7 @@
 
 .articleContainer {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 0.2fr;
   gap: 3rem 4rem;
   grid-auto-flow: row;
