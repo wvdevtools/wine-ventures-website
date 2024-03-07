@@ -12,5 +12,11 @@
     "title": "Media",
     "readMore": "Leia Mais",
     "seeAll": "Ver Tudo"
+  },
+  "head": {
+    "title": "Wine Ventures - Descubra o mundo do vinho a copo",
+    "description": "Wine Ventures - Produtor de vinho para sistemas wine-on-tap: marcas Dansa e Crime of the Century Premium Wine by the Glass. Lisboa, Portugal.",
+    "ogTitle": "Wine Ventures - World Wine Pleasures",
+    "ogDescription": "Na Wine Ventures, a paixão pelo vinho flui diretamente da torneira para o seu copo. A nossa viagem leva-nos a Fora da Garrafa, onde a inovação se encontra com a tradição, criando uma nova era de apreciação do vinho."
   }
 }

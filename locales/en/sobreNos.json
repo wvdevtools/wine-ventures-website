@@ -8,5 +8,11 @@
   "leadershipTitle": "Leadership",
   "leadershipText": "Leadership at our company isn't defined by titles; it's about the vision and dedication of every member. Get to know the heart and soul of our company who collectively drive our team toward success.",
   "FSFText": "His career journey fuelled a passion for the wine industry, which, coupled with his experience in the beverage business, inspired him to establish Wine Ventures.",
-  "MGText": "The guiding hand that ensures the unique character of our wines, combining expertise, innovation, and passion."
+  "MGText": "The guiding hand that ensures the unique character of our wines, combining expertise, innovation, and passion.",
+  "head": {
+    "title": "About | Wine Ventures",
+    "description": "Wine Ventures - Wine producer with wine-on-tap systems: brands Dansa and Crime of the Century Premium Wine by the Glass. Lisbon, Portugal.",
+    "ogTitle": "Wine Ventures - World Wine Pleasures",
+    "ogDescription": "At Wine Ventures, the passion for wine flows straight from the tap to your glass. Our journey takes us Outside the Bottle, where innovation meets tradition, creating a new era of wine appreciation."
+  }
 }

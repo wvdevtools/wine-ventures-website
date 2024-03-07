@@ -34,6 +34,17 @@ const Article = ({ article }) => {
               content="width=device-width, initial-scale=1"
             />
             <link rel="icon" href="/favicon.ico" />
+            {/* Open Graph / Facebook */}
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.wineventures.eu/" />
+            <meta property="og:title" content={article.title} />
+            <meta property="og:description" content={article.articleSummary} />
+            <meta
+              property="og:image"
+              content="https://www.wineventures.eu/images/wineventures.jpg"
+            />
+            {/*  Robots */}
+            <meta name="robots" content="index, follow" />
           </Head>
           <section className={styles.section}>
             <div className={styles.sectionContainer}>

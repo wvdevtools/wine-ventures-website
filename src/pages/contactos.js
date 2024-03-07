@@ -56,10 +56,23 @@ const Contactos = () => {
   return (
     <>
       <Head>
-        <title>Contactos</title>
-        <meta name="description" content="Wine Ventures - Contactos" />
+        <title>{t('head.title')}</title>
+        <meta name="description" content={t('head.description')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.wineventures.eu/" />
+        <meta property="og:title" content={t('head.ogTitle')} />
+        <meta property="og:description" content={t('head.ogDescription')} />
+        <meta
+          property="og:image"
+          content="https://www.wineventures.eu/images/wineventures.jpg"
+        />
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.wineventures.eu/contactos" />
+        {/*  Robots */}
+        <meta name="robots" content="index, follow" />
       </Head>
       <section className={styles.section}>
         <h1 className={`${arimo.className} ${styles.pageTitle}`}>
