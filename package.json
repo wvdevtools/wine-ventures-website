@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -23,6 +24,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "next-sitemap": "^4.2.3",
     "next-translate-plugin": "^2.0.2"
   }
 }
