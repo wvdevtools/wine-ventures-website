@@ -72,7 +72,7 @@ const Article = ({ article }) => {
                   </h1>
                   {/* </div> */}
                   <p className={styles.publishedAt}>
-                    {article.publishedAt.split('T')[0]}
+                    {article?.publishedAt?.split('T')[0]}
                   </p>
                   <article className={styles.articleBody}>
                     <PortableText value={article.body} />
