@@ -30,10 +30,19 @@ export const Navbar = ({ toggleMobileNav, t, iconIsOpen, setIconOpen }) => {
         </div>
         <nav className={styles.nav}>
           <ul className={styles.list}>
-            <Link href="/#marcas">{t('navbar.brands')}</Link>
-            <Link href="/sobre">{t('navbar.aboutUs')}</Link>
-            <Link href="/#media">{t('navbar.media')}</Link>
-            <Link href="/contactos">{t('navbar.contacts')}</Link>
+            <li>
+              <Link href="/#marcas">{t('navbar.brands')}</Link>
+            </li>
+
+            <li>
+              <Link href="/sobre">{t('navbar.aboutUs')}</Link>
+            </li>
+            <li>
+              <Link href="/#media">{t('navbar.media')}</Link>
+            </li>
+            <li>
+              <Link href="/contactos">{t('navbar.contacts')}</Link>
+            </li>
           </ul>
         </nav>
 
