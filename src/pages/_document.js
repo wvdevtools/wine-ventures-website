@@ -1,9 +1,11 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="pt">
       <Head>
+        {/* Google Analytics - Commented out */}
+        {/*
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -18,6 +20,7 @@ export default function Document() {
             `,
           }}
         />
+        */}
       </Head>
       <body>
         <Main />
